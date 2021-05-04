@@ -51,7 +51,9 @@ $(document).ready(function(){
         })
     }
 
-    AOS.init();
+    setTimeout(() => {
+        AOS.init();
+    }, 250)
 
     updateStats();
     setInterval(updateStats, 30000);
