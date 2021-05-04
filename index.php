@@ -32,7 +32,7 @@
                 <div class="col-sm-6">
                     <a href="https://sapphireadventures.net" target="_blank">
                         <div class="project" hover-color="rgba(66, 187, 242, .5)" >
-                            <div class="project-label">Sapphire Adventures</div>asset/img/sapphireadventures.net.png
+                            <div class="project-label">Sapphire Adventures</div>
                             <img src="asset/img/sapphireadventures.net.png" width="100%" alt="" class="img-wrap project-background">
                         </div>
                     </a>
