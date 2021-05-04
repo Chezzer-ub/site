@@ -39,7 +39,7 @@
                                 <span class="badge rounded-pill bg-warning ml-2">JavaScript</span>
                                 <span class="badge rounded-pill bg-info ml-2">PHP</span>
                             </div>
-                            <img src="asset/img/sapphireadventures.net.png" hover-color="rgba(66, 187, 242, .5)" width="100%" alt="" class="img-wrap project-background border border-2 border-dark">
+                            <img src="asset/img/sapphireadventures.net.png" hover-color="rgba(66, 187, 242, .5)" width="100%" alt="" class="img-wrap project-background">
                         </div>
                     </a>
                 </div>
@@ -53,7 +53,7 @@
                                 <span class="badge rounded-pill bg-warning ml-2">JavaScript</span>
                                 <span class="badge rounded-pill bg-info ml-2">PHP</span>
                             </div>
-                            <img src="asset/img/upbeatradio.net.png" hover-color="rgba(33, 116, 183, .5)" width="100%" alt="" class="img-wrap project-background border border-2 border-dark">
+                            <img src="asset/img/upbeatradio.net.png" hover-color="rgba(33, 116, 183, .5)" width="100%" alt="" class="img-wrap project-background">
                         </div>
                     </a>
                 </div>
@@ -67,7 +67,7 @@
                                 <span class="badge rounded-pill bg-warning ml-2">JavaScript</span>
                                 <span class="badge rounded-pill bg-info ml-2">Express</span>
                             </div>
-                            <img src="asset/img/bargrooves.live.png" hover-color="rgba(132, 27, 132, .5)" width="100%" alt="" class="img-wrap project-background border border-2 border-dark">
+                            <img src="asset/img/bargrooves.live.png" hover-color="rgba(132, 27, 132, .5)" width="100%" alt="" class="img-wrap project-background">
                         </div>
                     </a>
                 </div>
