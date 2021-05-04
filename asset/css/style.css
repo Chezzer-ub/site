@@ -84,8 +84,7 @@ a:hover::after {
 }
 
 .project .project-tags {
-    transition: .3s;
-    transition-delay: .1s;
+    transition: .5s;
     position: absolute;
     opacity: 0;
     transform: translateX(-50%);
