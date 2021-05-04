@@ -51,7 +51,7 @@ a:hover {
     filter: opacity(0.75) blur(1px);
 }
 
-.project .project-label, .project .project-tags {
+.project .project-label {
     z-index: 1;
     color: #fff;
     position: absolute;
@@ -67,6 +67,10 @@ a:hover {
 }
 
 .project .project-tags {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 20px;
     margin-top: 1.25rem;
     max-width: 200px;
     background: none;
