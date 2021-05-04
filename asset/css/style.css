@@ -71,7 +71,7 @@ a:hover {
     background: none;
 }
 
-.project:hover .project-label {
+.project:hover .project-label, .project:hover .project-tags {
     opacity: 1;
 }
 
