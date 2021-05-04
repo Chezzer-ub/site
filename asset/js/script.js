@@ -9,14 +9,14 @@ $(document).ready(function(){
                 background: $(event.target).attr("hover-color"),
                 width: "48px",
                 height: "48px",
-                margin: "-14px 0 0 -14x"
+                margin: "-24px 0 0 -24x"
             })
         } else if (event.target.localName == "a" || event.target.parentNode.localName == "a") {
             $(".cursor-ring").css({
                 background: "rgba(255,255,255,.25)",
                 width: "48px",
                 height: "48px",
-                margin: "-14px 0 0 -14px"
+                margin: "-24px 0 0 -24px"
             })
         } else {
             $(".cursor-ring").css({
