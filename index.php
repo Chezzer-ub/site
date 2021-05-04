@@ -25,6 +25,16 @@
             <div id="activity"></div>
         </div>
     </div>
+    <div class="second" data-aos="fade-up">
+        <div class="inner">
+            <h1>What I do</h1>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div style="background:url(asset/img/sapphire.png)" class="img-wrap project"></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="asset/js/moment.js?<?php echo filemtime("./asset/js/moment.js")?>"></script>
     <script src="asset/js/bootstrap.bundle.min.js?<?php echo filemtime("./asset/js/bootstrap.bundle.min.js")?>"></script>
     <script src="asset/js/jquery-3.6.0.min.js?<?php echo filemtime("./asset/js/jquery-3.6.0.min.js")?>"></script>
