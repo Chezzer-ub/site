@@ -10,7 +10,7 @@ $(document).ready(function(){
                 background: $(event.target).attr("hover-color"),
                 width: "32px",
                 height: "32px",
-                margin: "-12px 0 0 -12px"
+                margin: "-13px 0 0 -13px"
             })
         } else {
             $(".cursor-ring").css({
