@@ -1,28 +1,12 @@
 $(document).ready(function(){
     $(document).mousemove(function(event){
         $(".cursor-follow").css("left", event.pageX);
-        $(".cursor-follow").css("top", event.pageY-document.documentElement.scrollTop);
+        $(".cursor-follow").css("top", event.pageY);
         $(".cursor-follow").css("display", "inherit");
         $(".cursor-ring").css("display", "inherit");
 
-        if ($(event.target).attr("hover-color")) {
-            $(".cursor-ring").css({
-                background: $(event.target).attr("hover-color"),
-                width: "32px",
-                height: "32px",
-                margin: "-13px 0 0 -13px"
-            })
-        } else {
-            $(".cursor-ring").css({
-                background: "rgba(255,255,255,.1)",
-                width: "28px",
-                height: "28px",
-                margin: "-11px 0 0 -11px"
-            })
-        }
-
         setTimeout(() => {
-            $(".cursor-ring").css("top", event.pageY-document.documentElement.scrollTop);
+            $(".cursor-ring").css("top", event.pageY);
             $(".cursor-ring").css("left", event.pageX);
         }, 150)
     });
@@ -46,7 +30,7 @@ $(document).ready(function(){
         $.getJSON("https://api.lanyard.rest/v1/users/195979856733929472", (data) => {
             data = data.data;
             if (data.listening_to_spotify) {
-                $("#spotify").html(`<a class="noAStyle" target="_blank" href="https://open.spotify.com/track/${data.spotify.track_id}"><b>${data.spotify.song}</b> by <i>${data.spotify.artist}</i> on Spotify</a>`);
+                $("#spotify").html(`<a class="noAStyle" target="_blank" href="https://open.spotify.com/track/${data.spotify.track_id}"><b>${data.spotify.song}</b> by <i>${data.spotify.artist}</i></a>`);
             } else {
                 $("#spotify").html("Not listening to anything")
             }
@@ -61,12 +45,9 @@ $(document).ready(function(){
             $("#activity").html("");
             data.activities.forEach((item, i) => {
                 if (item.id !== "spotify:1" && item.id !== "custom") {
-                    $("#activity").append(`<p><span><i class="fad fa-window-restore"></i> Doing Something: ${item.name}</span></p>`);
+                    $("#activity").append(`<p><span><i class="fas fa-gamepad"></i> ${item.name}</span></p>`);
                 }
             })
-
-            $("#status").html("");
-            data.activities.forEach
         })
     }
 
