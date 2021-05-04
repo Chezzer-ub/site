@@ -5,6 +5,8 @@ $(document).ready(function(){
         $(".cursor-follow").css("display", "inherit");
         $(".cursor-ring").css("display", "inherit");
 
+        console.log(event);
+
         setTimeout(() => {
             $(".cursor-ring").css("top", event.pageY-document.documentElement.scrollTop);
             $(".cursor-ring").css("left", event.pageX);
