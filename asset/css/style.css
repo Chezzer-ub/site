@@ -43,9 +43,19 @@ a:hover {
     transition: .3s;
 }
 
-.project:hover {
+.project:hover .project-background {
     transform: scale(1.01);
     filter: opacity(0.75) blur(1px);
+}
+
+.project-label {
+    position: absolute;
+    opacity: 0;
+    transform: .3s;
+}
+
+.project:hover .project-label {
+    opacity: 1;
 }
 
 .color-accent {

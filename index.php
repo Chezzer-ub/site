@@ -31,7 +31,10 @@
             <div class="row">
                 <div class="col-sm-6">
                     <a href="https://sapphireadventures.net" target="_blank">
-                        <div class="project img-wrap" hover-color="rgba(66, 187, 242, .5)" style="background:url(asset/img/sapphireadventures.net.png);background-size: cover;"></div>
+                        <div class="project">
+                            <div class="project-label">Sapphire Adventures</div>
+                            <div class="project-background img-wrap" hover-color="rgba(66, 187, 242, .5)" style="background:url(asset/img/sapphireadventures.net.png);background-size: cover;"></div>
+                        </div>
                     </a>
                 </div>
                 <div class="col-sm-6">
