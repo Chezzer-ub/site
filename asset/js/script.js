@@ -4,7 +4,7 @@ $(document).ready(function(){
         $(".cursor-follow").css("top", event.pageY-document.documentElement.scrollTop);
         $(".cursor-follow").css("display", "inherit");
         $(".cursor-ring").css("display", "inherit");
-        console.log(event.target);
+        console.log(event);
         if ($(event.target).attr("hover-color")) {
             $(".cursor-ring").css({
                 background: $(event.target).attr("hover-color"),
