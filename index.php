@@ -33,7 +33,12 @@
                     <a href="https://sapphireadventures.net" target="_blank">
                         <div class="project">
                             <div class="project-label">Sapphire Adventures</div>
-                            <div class="project-tags"><span class="badge rounded-pill bg-primary">Primary</span><span class="badge rounded-pill bg-primary">Primary</span></div>
+                            <div class="project-tags">
+                                <span class="badge rounded-pill bg-danger">HTML</span>
+                                <span class="badge rounded-pill bg-primary ml-2">CSS</span>
+                                <span class="badge rounded-pill bg-warning ml-2">JavaScript</span>
+                                <span class="badge rounded-pill bg-info ml-2">PHP</span>
+                            </div>
                             <img src="asset/img/sapphireadventures.net.png" hover-color="rgba(66, 187, 242, .5)" width="100%" alt="" class="img-wrap project-background">
                         </div>
                     </a>
