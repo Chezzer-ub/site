@@ -16,7 +16,7 @@
     <div class="cursor-ring"></div>
     <div class="cursor-follow"></div>
     <div class="site" data-aos="fade-up">
-        <div class="inner">
+        <div class="content">
             <h1>hi, <span class="color-accent">I'm Chezzer</span></h1>
             <p>A full stack developer with experience in HTML, CSS, jQuery, PHP and NodeJS web frameworks. I love to make cool projects with a touch of art, fun, and mainly, code.</p>
             <di id="status"></di>
