@@ -16,7 +16,7 @@ $(document).ready(function(){
                 background: "rgba(255,255,255,.25)",
                 width: "48px",
                 height: "48px",
-                margin: "-24px 0 0 -24px"
+                margin: "-21px 0 0 -21px"
             })
         } else {
             $(".cursor-ring").css({
