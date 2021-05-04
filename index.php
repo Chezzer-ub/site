@@ -44,7 +44,7 @@
                     </a>
                 </div>
                 <div class="col-sm-6">
-                    <a href="https://sapphireadventures.net" target="_blank">
+                    <a href="https://upbeatradio.net" target="_blank">
                         <div class="project">
                             <div class="project-label">UpBeat Radio</div>
                             <div class="project-tags">
