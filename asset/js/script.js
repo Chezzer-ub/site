@@ -4,6 +4,22 @@ $(document).ready(function(){
         $(".cursor-follow").css("top", event.pageY-document.documentElement.scrollTop);
         $(".cursor-follow").css("display", "inherit");
         $(".cursor-ring").css("display", "inherit");
+        console.log(event.target);
+        if ($(event.target).attr("hover-color")) {
+            $(".cursor-ring").css({
+                background: $(event.target).attr("hover-color"),
+                width: "32px",
+                height: "32px",
+                margin: "-12px 0 0 -12px"
+            })
+        } else {
+            $(".cursor-ring").css({
+                background: "rgba(255,255,255,.1)",
+                width: "28px",
+                height: "28px",
+                margin: "-11px 0 0 -11px"
+            })
+        }
 
         setTimeout(() => {
             $(".cursor-ring").css("top", event.pageY-document.documentElement.scrollTop);
