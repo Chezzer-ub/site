@@ -29,7 +29,7 @@
         <div class="content" style="width: 42vmax;">
             <h3 class="mb-4">Some of my projects</h3>
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-6 mb-4">
                     <a href="https://sapphireadventures.net" target="_blank">
                         <div class="project">
                             <div class="project-label">Sapphire Adventures</div>
@@ -39,11 +39,11 @@
                                 <span class="badge rounded-pill bg-warning ml-2">JavaScript</span>
                                 <span class="badge rounded-pill bg-info ml-2">PHP</span>
                             </div>
-                            <img src="asset/img/sapphireadventures.net.png" hover-color="rgba(66, 187, 242, .5)" width="100%" alt="" class="img-wrap project-background">
+                            <img src="asset/img/sapphireadventures.net.png" hover-color="rgba(66, 187, 242, .5)" width="100%" alt="" class="img-wrap project-background border border-2 border-dark">
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6 mb-4">
                     <a href="https://upbeatradio.net" target="_blank">
                         <div class="project">
                             <div class="project-label">UpBeat Radio</div>
@@ -53,11 +53,11 @@
                                 <span class="badge rounded-pill bg-warning ml-2">JavaScript</span>
                                 <span class="badge rounded-pill bg-info ml-2">PHP</span>
                             </div>
-                            <img src="asset/img/upbeatradio.net.png" hover-color="rgba(33, 116, 183, .5)" width="100%" alt="" class="img-wrap project-background">
+                            <img src="asset/img/upbeatradio.net.png" hover-color="rgba(33, 116, 183, .5)" width="100%" alt="" class="img-wrap project-background border border-2 border-dark">
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-6 mt-4">
+                <div class="col-sm-6 mb-4">
                     <a href="https://bargrooves.live/player" target="_blank">
                         <div class="project">
                             <div class="project-label">Bargrooves</div>
@@ -67,7 +67,7 @@
                                 <span class="badge rounded-pill bg-warning ml-2">JavaScript</span>
                                 <span class="badge rounded-pill bg-info ml-2">Express</span>
                             </div>
-                            <img src="asset/img/bargrooves.live.png" hover-color="rgba(132, 27, 132, .5)" width="100%" alt="" class="img-wrap project-background">
+                            <img src="asset/img/bargrooves.live.png" hover-color="rgba(132, 27, 132, .5)" width="100%" alt="" class="img-wrap project-background border border-2 border-dark">
                         </div>
                     </a>
                 </div>
