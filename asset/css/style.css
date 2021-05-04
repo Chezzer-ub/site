@@ -20,9 +20,7 @@ a:hover {
     text-decoration: none;
 }
 
-
-
-a::after {
+a:not(.btn)::after {
     content: "";
     width: 0%;
     transition: .3s;
