@@ -24,6 +24,8 @@
             <div><i class="fad fa-headphones mr-2"></i> <span id="spotify"></span></div>
             <div id="activity"></div>
         </div>
+    </div>
+    <div class="site" data-aos="fade-up">
         <div class="content">
             <h1>What I do</h1>
             <div class="row">
