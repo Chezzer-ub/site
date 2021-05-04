@@ -24,6 +24,10 @@
             <div><i class="fad fa-headphones mr-2"></i> <span id="spotify"></span></div>
             <div id="activity"></div>
         </div>
+        <div class="content">
+            <h1>What I do</h1>
+            <div class="project" style="padding-bottom: 56.25%;background:url(asset/sapphireadventures.net.png)"></div>
+        </div>
     </div>
     <script src="asset/js/moment.js?<?php echo filemtime("./asset/js/moment.js")?>"></script>
     <script src="asset/js/bootstrap.bundle.min.js?<?php echo filemtime("./asset/js/bootstrap.bundle.min.js")?>"></script>
