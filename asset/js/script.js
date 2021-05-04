@@ -30,7 +30,7 @@ $(document).ready(function(){
         $.getJSON("https://api.lanyard.rest/v1/users/195979856733929472", (data) => {
             data = data.data;
             if (data.listening_to_spotify) {
-                $("#spotify").html(`<a class="noAStyle" target="_blank" href="https://open.spotify.com/track/${data.spotify.track_id}"><b>${data.spotify.song}</b> by <i>${data.spotify.artist}</i></a>`);
+                $("#spotify").html(`<a class="noAStyle" target="_blank" href="https://open.spotify.com/track/${data.spotify.track_id}"><b>${data.spotify.song}</b> by <i>${data.spotify.artist}</i> on Spotify</a>`);
             } else {
                 $("#spotify").html("Not listening to anything")
             }
@@ -45,9 +45,12 @@ $(document).ready(function(){
             $("#activity").html("");
             data.activities.forEach((item, i) => {
                 if (item.id !== "spotify:1" && item.id !== "custom") {
-                    $("#activity").append(`<p><span><i class="fas fa-gamepad"></i> ${item.name}</span></p>`);
+                    $("#activity").append(`<p><span><i class="fad fa-window-restore"></i> Doing Something: ${item.name}</span></p>`);
                 }
             })
+
+            $("#status").html("");
+            data.activities.forEach
         })
     }
 
