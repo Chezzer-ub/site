@@ -12,6 +12,13 @@ $(document).ready(function(){
                 height: "32px",
                 margin: "-12px 0 0 -12px"
             })
+        } else if (event.target.localName == "a" || event.target.parentNode.localName == "a") {
+            $(".cursor-ring").css({
+                background: "rgba(255,255,255,.1)",
+                width: "32px",
+                height: "32px",
+                margin: "-12px 0 0 -12px"
+            })
         } else {
             $(".cursor-ring").css({
                 background: "rgba(255,255,255,.1)",
