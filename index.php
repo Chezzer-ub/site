@@ -76,10 +76,10 @@
     </div>
     <div class="site footer" data-aos="fade-up">
         <div class="content text-center" style="margin: 0; width: 100%;">
-            <a target="_blank" href="https://twitter.com/ChezzerYT" class="mr-2"><i class="fab fa-twitter fa-2x"></i></a>
-            <a target="_blank" href="https://open.spotify.com/user/chezzercherry" class="mr-2"><i class="fab fa-spotify fa-2x"></i></a>
-            <a target="_blank" href="https://instagram.com/ryancherry.nz/" class="mr-2"><i class="fab fa-instagram fa-2x"></i></a>
-            <a target="_blank" href="https://discord.bio/p/chezzer"><i class="fab fa-discord fa-2x"></i></a>
+            <a target="_blank" href="https://twitter.com/ChezzerYT" class="p-1"><i class="fab fa-twitter fa-2x"></i></a>
+            <a target="_blank" href="https://open.spotify.com/user/chezzercherry" class="p-1"><i class="fab fa-spotify fa-2x"></i></a>
+            <a target="_blank" href="https://instagram.com/ryancherry.nz/" class="p-1"><i class="fab fa-instagram fa-2x"></i></a>
+            <a target="_blank" href="https://discord.bio/p/chezzer" class="p-1"><i class="fab fa-discord fa-2x"></i></a>
         </div>
     </div>
     <script src="asset/js/moment.js?<?php echo filemtime("./asset/js/moment.js")?>"></script>
