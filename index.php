@@ -40,8 +40,16 @@
                 <div class="col-sm-6">
                     <a href="https://sapphireadventures.net" target="_blank">
                         <div class="project">
-                            <div class="project-label">Sapphire Adventures</div>
-                            <img src="asset/img/sapphireadventures.net.png" hover-color="rgba(165, 62, 150, .5)" width="100%" alt="" class="img-wrap project-background">
+                            <div class="project-label">UpBeat Radio</div>
+                            <img src="asset/img/upbeatradio.net.png" hover-color="rgba(165, 62, 150, .5)" width="100%" alt="" class="img-wrap project-background">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6">
+                    <a href="https://bargrooves.live" target="_blank">
+                        <div class="project">
+                            <div class="project-label">Bargrooves</div>
+                            <img src="asset/img/upbeatradio.net.png" hover-color="rgba(132, 27, 132, .5)" width="100%" alt="" class="img-wrap project-background">
                         </div>
                     </a>
                 </div>
