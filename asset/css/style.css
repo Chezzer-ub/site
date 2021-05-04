@@ -82,10 +82,10 @@ h1, h2, h3, h4, h5, h6, strong, b {
 }
 
 @media (max-width: 1000px) {
-    .first .inner {
+    .site .content {
         width: 80%;
     }
-    .first {
+    .site {
         height: 75vh;
     }
     .cursor-follow, .cursor-ring {
