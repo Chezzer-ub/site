@@ -67,6 +67,8 @@ a:hover {
 }
 
 .project .project-tags {
+    transition: .3s;
+    transition-delay: .1s;
     position: absolute;
     opacity: 0;
     transform: translateX(-50%);
