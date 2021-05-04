@@ -1,0 +1,168 @@
+body {
+    font-family: 'Montserrat', var(--bs-font-sans-serif);
+    color: #0f344a;
+    background: #fbffff url(background.jpg);
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.footer-text {
+  width: 30%;
+}
+
+.main {
+  padding: 5rem 20% 5rem 20%;
+}
+
+.form {
+    transition: .5s;
+}
+
+#final-score {
+    padding: .5rem 1rem .5rem 1rem;
+    border-radius: 25px;
+    background: #eee;
+    width: fit-content;
+}
+
+#share {
+    width: 25%;
+}
+
+.score {
+    opacity: 0;
+    transition: .5s;
+    display: none;
+    transform: translateY(-10px);
+}
+
+.score * {
+    margin-bottom: 2rem;
+}
+
+.button {
+    cursor: pointer;
+    width: fit-content;
+    min-width: 0;
+    height: 37px;
+    line-height: 35px;
+    margin-top: 8px;
+    padding: 0 20px 0 20px;
+    font-size: 16px;
+    background: #69bee7;
+    box-shadow: 0 4px 4px rgba(0,0,0,.17);
+    border-radius: 50px;
+    color: #fff;
+}
+
+#questions {
+  border-left: 2px solid #dbdbdb;
+  padding-left: 21px;
+  margin-left: 3px;
+}
+
+a,
+#calculate {
+  cursor: pointer;
+  color: #69bee7;
+  text-decoration: none;
+}
+
+a:hover,
+#calculate:hover {
+  color: #69bee7;
+  text-decoration: underline;
+}
+
+/* The container */
+.question {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  margin-top: 1rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.question input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    box-shadow: 0 5px 10px 0 rgba(50, 50, 50, 0.1);
+  border-radius: 50%;
+  transition: all 0.3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.question input:checked ~ .checkmark {
+    box-shadow: 0 5px 10px 0 rgba(50, 50, 50, 0.20);
+  background-color: #f77f40;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.question input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.question .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 7px;
+  height: 13px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media screen and (min-width: 800px) {
+  .intro {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1000px) {
+    .main {
+        padding: 2rem 5% 5rem 5%;
+    }
+
+    #share {
+        width: 75%;
+    }
+
+    .footer-text {
+      width: 75%;
+    }
+}

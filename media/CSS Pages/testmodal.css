@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+p{
+    color: seashell;
+    padding-left: 5vw;
+}
+h1{
+    font-size: 2vw;
+    text-align: center;
+}
+
+button{
+    font-size: 2rem;
+    background-color:   #021a40;
+    color: #fff; 
+    border: none;
+    padding: 2rem 2rem;
+    transition: all .3s ease;
+    cursor: pointer;
+    text-align: center;
+}
+button:hover{
+        background-color:  #021a49;
+}
+
+
+.modal{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contents {
+    width: 80vw;
+    height: 35vw;
+    background-color: #021a40;
+    border: 0.5vw solid white;
+}
+
+
+.cross{
+    padding: 0.4rem 0.6rem;
+    font-size: 1vw;
+    margin-left: 76vw;
+    margin-top: 0.4vw;
+    color: red;
+    border: 0.1vw solid white;
+
+}
