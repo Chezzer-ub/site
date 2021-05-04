@@ -15,19 +15,15 @@
 <body>
     <div class="cursor-ring"></div>
     <div class="cursor-follow"></div>
-    <div class="site">
-        <div class="first" data-aos="fade-up">
-            <div class="inner">
-                <h1>hi, <span class="color-accent">I'm Chezzer</span></h1>
-                <p>A full stack developer with experience in HTML, CSS, jQuery, PHP and NodeJS web frameworks. I love to make cool projects with a touch of art, fun, and mainly, code.</p>
-                <di id="status"></di>
-                <div><i class="fas fa-clock mr-2"></i> <span id="time"></span></div>
-                <div><i class="fab fa-spotify mr-2"></i> <span id="spotify"></span></div>
-                <div id="activity"></div>
-            </div>
-        </div>
-        <div class="second" data-aos="fade-up">
-            <div class="inner">
+    <div class="site" data-aos="fade-up">
+        <div class="inner">
+            <h1>hi, <span class="color-accent">I'm Chezzer</span></h1>
+            <p>A full stack developer with experience in HTML, CSS, jQuery, PHP and NodeJS web frameworks. I love to make cool projects with a touch of art, fun, and mainly, code.</p>
+            <di id="status"></di>
+            <div><i class="fas fa-clock mr-2"></i> <span id="time"></span></div>
+            <div><i class="fab fa-spotify mr-2"></i> <span id="spotify"></span></div>
+            <div id="activity"></div>
+            <div class="mt-5">
                 <h1>What I do</h1>
                 <div class="row">
                     <div class="col-sm-3">
