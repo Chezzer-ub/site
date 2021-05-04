@@ -3,7 +3,8 @@ body {
     font-family: soleil, sans-serif;
     background:#0F1923;
     color: #FFE3D7;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 a {
