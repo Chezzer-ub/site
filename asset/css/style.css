@@ -41,6 +41,7 @@ a:hover {
 .site .content {
     width: 30%;
     margin: auto;
+    margin-top: 350px;
 }
 
 .color-accent {
