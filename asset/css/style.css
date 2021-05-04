@@ -107,9 +107,9 @@ h1, h2, h3, h4, h5, h6, strong, b {
 }
 
 .cursor-ring.down {
-    width: 30px;
-    height: 30px;
-    margin: -12px 0 0 -12px;
+    width: 30px !important;
+    height: 30px !important;
+    margin: -12px 0 0 -12px !important;
     background: rgba(255,255,255,.25) !important;
 }
 
