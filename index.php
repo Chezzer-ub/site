@@ -34,6 +34,11 @@
                         <div class="project img-wrap" hover-color="rgba(66, 187, 242, .5)" style="background:url(asset/img/sapphireadventures.net.png);background-size: cover;"></div>
                     </a>
                 </div>
+                <div class="col-sm-6">
+                    <a href="https://upbeatradio.net" target="_blank">
+                        <div class="project img-wrap" hover-color="rgba(165, 62, 150, .5)" style="background:url(asset/img/upbeatradio.net.png);background-size: cover;"></div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
