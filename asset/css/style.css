@@ -52,9 +52,10 @@ a:hover {
 
 .project .project-label {
     transition: .3s;
+    z-index: 1;
     position: absolute;
     opacity: 0;
-    transform: .3s;
+    transition: .3s;
 }
 
 .project:hover .project-label {
