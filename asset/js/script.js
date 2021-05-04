@@ -1,12 +1,12 @@
 $(document).ready(function(){
     $(document).mousemove(function(event){
         $(".cursor-follow").css("left", event.pageX);
-        $(".cursor-follow").css("top", event.pageY);
+        $(".cursor-follow").css("top", event.pageY+document.documentElement.scrollTop);
         $(".cursor-follow").css("display", "inherit");
         $(".cursor-ring").css("display", "inherit");
 
         setTimeout(() => {
-            $(".cursor-ring").css("top", event.pageY);
+            $(".cursor-ring").css("top", event.pageY+document.documentElement.scrollTop);
             $(".cursor-ring").css("left", event.pageX);
         }, 150)
     });
