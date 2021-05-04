@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hey, I'm Chezzer</title>
+    <title>hi, I'm Chezzer</title>
     <link rel="stylesheet" href="asset/css/bootstrap.min.css?<?php echo filemtime("./asset/css/bootstrap.min.css")?>">
     <link rel="stylesheet" href="asset/css/style.css?<?php echo filemtime("./asset/css/style.css")?>">
+    <link rel="stylesheet" href="asset/css/aos.css?<?php echo filemtime("./asset/css/aos.css")?>">
     <link rel="stylesheet" href="https://use.typekit.net/fmi6uwl.css">
     <link href="https://kit-pro.fontawesome.com/releases/v5.14.0/css/pro.min.css" rel="stylesheet" />
     <link rel="shortcut icon" href="/favicon.ico?<?php echo filemtime("./")?>" type="image/x-icon">
@@ -14,7 +15,7 @@
 <body>
     <div class="cursor-ring"></div>
     <div class="cursor-follow"></div>
-    <div class="first">
+    <div class="first"  data-aos="fade-up">
         <div class="inner">
             <h1>hi, <span class="color-accent">I'm Chezzer</span></h1>
             <p>A full stack developer with experience in HTML, CSS, jQuery, PHP and NodeJS web frameworks. I love to make cool projects with a touch of art, fun, and mainly, code.</p>
@@ -25,6 +26,7 @@
         </div>
     </div>
     <script src="asset/js/moment.js?<?php echo filemtime("./asset/js/moment.js")?>"></script>
+    <script src="asset/js/aos.js?<?php echo filemtime("./asset/js/aos.js")?>"></script>
     <script src="asset/js/bootstrap.bundle.min.js?<?php echo filemtime("./asset/js/bootstrap.bundle.min.js")?>"></script>
     <script src="asset/js/jquery-3.6.0.min.js?<?php echo filemtime("./asset/js/jquery-3.6.0.min.js")?>"></script>
     <script src="asset/js/script.js?<?php echo filemtime("./asset/js/script.js")?>"></script>
