@@ -30,7 +30,7 @@ a:hover {
     justify-content: center;
 }
 
-.site.inner {
+.site .content {
     width: 28vmax;
     margin: 0 auto;
 }
