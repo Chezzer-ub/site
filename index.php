@@ -74,7 +74,7 @@
             </div>
         </div>
     </div>
-    <div class="site" data-aos="fade-up">
+    <div class="site footer" data-aos="fade-up">
         <div class="content" style="margin: 0; width: 100%;">
             <a class="btn btn-dark" style="transform: translateX(-50%); left: 50%;">Contact Me</a>
         </div>
