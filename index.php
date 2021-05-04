@@ -20,8 +20,8 @@
             <h1>hi, <span class="color-accent">I'm Chezzer</span></h1>
             <p>A full stack developer with experience in HTML, CSS, jQuery, PHP and NodeJS web frameworks. I love to make cool projects with a touch of art, fun, and mainly, code.</p>
             <div id="status"></div>
-            <div><i class="fad fa-clock mr-2"></i> <span id="time" class="m-1"></span></div>
-            <div><i class="fad fa-headphones mr-2"></i> <span id="spotify" class="m-1"></span></div>
+            <div><i class="fas fa-clock mr-2"></i> <span id="time" class="m-1"></span></div>
+            <div><i class="fas fa-headphones mr-2"></i> <span id="spotify" class="m-1"></span></div>
             <div id="activity"></div>
         </div>
     </div>
