@@ -1,13 +1,13 @@
 $(document).ready(function(){
     $(document).mousemove(function(event){
-        $(".cursor-follow").css("left", event.pageX);
-        $(".cursor-follow").css("top", event.pageY+document.documentElement.scrollTop);
+        $(".cursor-follow").css("left", event.pageX+"px");
+        $(".cursor-follow").css("top", (event.pageY+document.documentElement.scrollTop)+"px");
         $(".cursor-follow").css("display", "inherit");
         $(".cursor-ring").css("display", "inherit");
 
         setTimeout(() => {
-            $(".cursor-ring").css("top", event.pageY+document.documentElement.scrollTop);
-            $(".cursor-ring").css("left", event.pageX);
+            $(".cursor-ring").css("top", (event.pageY+document.documentElement.scrollTop)+"px");
+            $(".cursor-ring").css("left", event.pageX+"px");
         }, 150)
     });
 
