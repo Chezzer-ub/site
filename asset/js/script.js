@@ -9,7 +9,7 @@ $(document).ready(function(){
                 background: $(event.target).attr("hover-color"),
                 width: "48px",
                 height: "48px",
-                margin: "-24px 0 0 -24x"
+                margin: "-21px 0 0 -21px"
             })
         } else if (event.target.localName == "a" || event.target.parentNode.localName == "a") {
             $(".cursor-ring").css({
