@@ -68,12 +68,14 @@ a:hover {
 
 .project .project-tags {
     position: absolute;
+    opacity: 0;
     transform: translateX(-50%);
     left: 50%;
     bottom: 20px;
     margin-top: 1.25rem;
     z-index: 1;
     background: none;
+    width: fit-content;
 }
 
 .project:hover .project-label, .project:hover .project-tags {
