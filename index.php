@@ -30,7 +30,7 @@
             <h1>What I do</h1>
             <div class="row">
                 <div class="col-sm-6">
-                    <div class="project" style="padding-bottom: 56.25%;background:url(asset/sapphireadventures.net.png)"></div>
+                    <div class="project img-wrap" style="padding-bottom: 56.25%;background:url(asset/img/sapphireadventures.net.png)"></div>
                 </div>
             </div>
         </div>
