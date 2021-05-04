@@ -19,7 +19,7 @@
         <div class="content">
             <h1>hi, <span class="color-accent">I'm Chezzer</span></h1>
             <p>A full stack developer with experience in HTML, CSS, jQuery, PHP and NodeJS web frameworks. I love to make cool projects with a touch of art, fun, and mainly, code.</p>
-            <di id="status"></di>
+            <div id="status"></div>
             <div><i class="fad fa-clock mr-2"></i> <span id="time" class="m-1"></span></div>
             <div><i class="fad fa-headphones mr-2"></i> <span id="spotify" class="m-1"></span></div>
             <div id="activity"></div>
@@ -27,7 +27,7 @@
     </div>
     <div class="site" data-aos="fade-up">
         <div class="content" style="width: 42vmax;">
-            <h2 class="mb-4">What I do</h2>
+            <h2 class="mb-4">What I have done</h2>
             <div class="row">
                 <div class="col-sm-6">
                     <a href="https://sapphireadventures.net" target="_blank">
@@ -72,6 +72,16 @@
                     </a>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="site" data-aos="fade-up">
+        <div class="content">
+            <h1>hi, <span class="color-accent">I'm Chezzer</span></h1>
+            <p>A full stack developer with experience in HTML, CSS, jQuery, PHP and NodeJS web frameworks. I love to make cool projects with a touch of art, fun, and mainly, code.</p>
+            <di id="status"></di>
+            <div><i class="fad fa-clock mr-2"></i> <span id="time" class="m-1"></span></div>
+            <div><i class="fad fa-headphones mr-2"></i> <span id="spotify" class="m-1"></span></div>
+            <div id="activity"></div>
         </div>
     </div>
     <script src="asset/js/moment.js?<?php echo filemtime("./asset/js/moment.js")?>"></script>
