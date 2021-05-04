@@ -31,15 +31,18 @@
             <div class="row">
                 <div class="col-sm-6">
                     <a href="https://sapphireadventures.net" target="_blank">
-                        <div class="project" hover-color="rgba(66, 187, 242, .5)" >
+                        <div class="project">
                             <div class="project-label">Sapphire Adventures</div>
-                            <img src="asset/img/sapphireadventures.net.png" width="100%" alt="" class="img-wrap project-background">
+                            <img src="asset/img/sapphireadventures.net.png" hover-color="rgba(66, 187, 242, .5)" width="100%" alt="" class="img-wrap project-background">
                         </div>
                     </a>
                 </div>
                 <div class="col-sm-6">
-                    <a href="https://upbeatradio.net" target="_blank">
-                        <div class="project img-wrap" hover-color="rgba(165, 62, 150, .5)" style="background:url(asset/img/upbeatradio.net.png);background-size: cover;"></div>
+                    <a href="https://sapphireadventures.net" target="_blank">
+                        <div class="project">
+                            <div class="project-label">Sapphire Adventures</div>
+                            <img src="asset/img/sapphireadventures.net.png" hover-color="rgba(165, 62, 150, .5)" width="100%" alt="" class="img-wrap project-background">
+                        </div>
                     </a>
                 </div>
             </div>
