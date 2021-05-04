@@ -1,13 +1,13 @@
 $(document).ready(function(){
     $(document).mousemove(function(event){
-        $(".cursor-follow").css("left", event.pageX+"px");
-        $(".cursor-follow").css("top", (event.pageY+document.documentElement.scrollTop)+"px");
+        $(".cursor-follow").css("left", event.pageX);
+        $(".cursor-follow").css("top", event.pageY);
         $(".cursor-follow").css("display", "inherit");
         $(".cursor-ring").css("display", "inherit");
 
         setTimeout(() => {
-            $(".cursor-ring").css("top", (event.pageY+document.documentElement.scrollTop)+"px");
-            $(".cursor-ring").css("left", event.pageX+"px");
+            $(".cursor-ring").css("top", event.pageY);
+            $(".cursor-ring").css("left", event.pageX);
         }, 150)
     });
 
@@ -56,5 +56,5 @@ $(document).ready(function(){
     }, 250)
 
     updateStats();
-    setInterval(updateStats, 30000);
+    setInterval(updateStats, 10000);
 });

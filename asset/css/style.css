@@ -3,7 +3,7 @@ body {
     font-family: soleil, sans-serif;
     background:#0F1923;
     color: #FFE3D7;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 a {
@@ -24,6 +24,11 @@ a:hover {
 
 .project {
     padding-bottom: 56.25%;
+}
+
+.site {
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .first, .second {
