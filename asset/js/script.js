@@ -6,9 +6,19 @@ $(document).ready(function(){
         $(".cursor-ring").css("display", "inherit");
 
         if ($(event.target).attr("hover-color")) {
-            $(".cursor-ring").css("background", $(event.target).attr("hover-color"))
+            $(".cursor-ring").css({
+                background: $(event.target).attr("hover-color"),
+                width: "32px",
+                height: "32px",
+                margin: "-12px 0 0 -12px"
+            })
         } else {
-            $(".cursor-ring").css("background", "rgba(255,255,255,.1)")
+            $(".cursor-ring").css({
+                background: "rgba(255,255,255,.1)",
+                width: "28px",
+                height: "28px",
+                margin: "-11px 0 0 -11px"
+            })
         }
 
         setTimeout(() => {
