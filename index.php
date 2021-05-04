@@ -45,11 +45,11 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-6">
-                    <a href="https://bargrooves.live" target="_blank">
+                <div class="col-sm-6 mt-3">
+                    <a href="https://bargrooves.live/player" target="_blank">
                         <div class="project">
                             <div class="project-label">Bargrooves</div>
-                            <img src="asset/img/upbeatradio.net.png" hover-color="rgba(132, 27, 132, .5)" width="100%" alt="" class="img-wrap project-background">
+                            <img src="asset/img/bargrooves.live.png" hover-color="rgba(132, 27, 132, .5)" width="100%" alt="" class="img-wrap project-background">
                         </div>
                     </a>
                 </div>
