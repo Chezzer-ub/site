@@ -15,7 +15,7 @@
 <body>
     <div class="cursor-ring"></div>
     <div class="cursor-follow"></div>
-    <div class="first"  data-aos="fade-up">
+    <div class="first" data-aos="fade-up">
         <div class="inner">
             <h1>hi, <span class="color-accent">I'm Chezzer</span></h1>
             <p>A full stack developer with experience in HTML, CSS, jQuery, PHP and NodeJS web frameworks. I love to make cool projects with a touch of art, fun, and mainly, code.</p>
@@ -26,9 +26,9 @@
         </div>
     </div>
     <script src="asset/js/moment.js?<?php echo filemtime("./asset/js/moment.js")?>"></script>
-    <script src="asset/js/aos.js?<?php echo filemtime("./asset/js/aos.js")?>"></script>
     <script src="asset/js/bootstrap.bundle.min.js?<?php echo filemtime("./asset/js/bootstrap.bundle.min.js")?>"></script>
     <script src="asset/js/jquery-3.6.0.min.js?<?php echo filemtime("./asset/js/jquery-3.6.0.min.js")?>"></script>
     <script src="asset/js/script.js?<?php echo filemtime("./asset/js/script.js")?>"></script>
+    <script src="asset/js/aos.js?<?php echo filemtime("./asset/js/aos.js")?>"></script>
 </body>
 </html>

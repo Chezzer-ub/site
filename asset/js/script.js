@@ -50,6 +50,9 @@ $(document).ready(function(){
             })
         })
     }
+
+    AOS.init();
+
     updateStats();
     setInterval(updateStats, 30000);
 });
