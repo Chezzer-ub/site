@@ -33,6 +33,7 @@
                     <a href="https://sapphireadventures.net" target="_blank">
                         <div class="project">
                             <div class="project-label">Sapphire Adventures</div>
+                            <div class="project-tags"><span class="badge rounded-pill bg-primary">Primary</span><span class="badge rounded-pill bg-primary">Primary</span></div>
                             <img src="asset/img/sapphireadventures.net.png" hover-color="rgba(66, 187, 242, .5)" width="100%" alt="" class="img-wrap project-background">
                         </div>
                     </a>
