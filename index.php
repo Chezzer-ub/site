@@ -41,7 +41,7 @@
                     <a href="https://sapphireadventures.net" target="_blank">
                         <div class="project">
                             <div class="project-label">UpBeat Radio</div>
-                            <img src="asset/img/upbeatradio.net.png" hover-color="rgba(165, 62, 150, .5)" width="100%" alt="" class="img-wrap project-background">
+                            <img src="asset/img/upbeatradio.net.png" hover-color="rgba(33, 116, 183, .5)" width="100%" alt="" class="img-wrap project-background">
                         </div>
                     </a>
                 </div>
