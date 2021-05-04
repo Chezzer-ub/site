@@ -44,7 +44,7 @@ a:hover {
 }
 
 .project:hover {
-    transform: scale(0.01);
+    transform: scale(1.01);
     filter: opacity(0.75) blur(1px);
 }
 
