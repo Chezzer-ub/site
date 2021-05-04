@@ -15,19 +15,21 @@
 <body>
     <div class="cursor-ring"></div>
     <div class="cursor-follow"></div>
-    <div class="site" data-aos="fade-up">
-        <div class="content">
-            <h1>hi, <span class="color-accent">I'm Chezzer</span></h1>
-            <p>A full stack developer with experience in HTML, CSS, jQuery, PHP and NodeJS web frameworks. I love to make cool projects with a touch of art, fun, and mainly, code.</p>
-            <di id="status"></di>
-            <div><i class="fas fa-clock mr-2"></i> <span id="time"></span></div>
-            <div><i class="fab fa-spotify mr-2"></i> <span id="spotify"></span></div>
-            <div id="activity"></div>
-            <div style="margin-top: 900px">
-                <h2>What I do</h2>
-                <div class="row">
-                    <div class="col-sm-3">
-                        <div style="background:url(asset/img/sapphire.png)" class="img-wrap project"></div>
+    <div class="scroll">
+        <div class="site" data-aos="fade-up">
+            <div class="content">
+                <h1>hi, <span class="color-accent">I'm Chezzer</span></h1>
+                <p>A full stack developer with experience in HTML, CSS, jQuery, PHP and NodeJS web frameworks. I love to make cool projects with a touch of art, fun, and mainly, code.</p>
+                <di id="status"></di>
+                <div><i class="fas fa-clock mr-2"></i> <span id="time"></span></div>
+                <div><i class="fab fa-spotify mr-2"></i> <span id="spotify"></span></div>
+                <div id="activity"></div>
+                <div style="margin-top: 900px">
+                    <h2>What I do</h2>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div style="background:url(asset/img/sapphire.png)" class="img-wrap project"></div>
+                        </div>
                     </div>
                 </div>
             </div>

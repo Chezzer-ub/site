@@ -26,9 +26,12 @@ a:hover {
     padding-bottom: 56.25%;
 }
 
-.site {
+.scroll {
     overflow-y: auto;
     overflow-x: hidden;
+}
+
+.site {
     width: 100vw;
     height: 100vh;
     display: flex;
