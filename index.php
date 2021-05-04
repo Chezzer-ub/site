@@ -78,8 +78,8 @@
         <div class="content" style="margin: 0; width: 100%;">
             <div style="transform: translateX(-50%); left: 50%;">
                 <a target="_blank" href="https://twitter.com/ChezzerYT" class="mr-2"><i class="fab fa-twitter fa-2x"></i></a>
-                <a target="_blank" href="https://open.spotify.com/user/chezzercherry"><i class="fab fa-spotify fa-2x"></i></a>
-                <a target="_blank" href="https://instagram.com/ryancherry.nz/"><i class="fab fa-instagram fa-2x"></i></a>
+                <a target="_blank" href="https://open.spotify.com/user/chezzercherry" class="mr-2"><i class="fab fa-spotify fa-2x"></i></a>
+                <a target="_blank" href="https://instagram.com/ryancherry.nz/" class="mr-2"><i class="fab fa-instagram fa-2x"></i></a>
                 <a target="_blank" href="https://discord.bio/p/chezzer"><i class="fab fa-discord fa-2x"></i></a>
             </div>
         </div>
