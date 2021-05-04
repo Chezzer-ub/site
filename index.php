@@ -27,7 +27,7 @@
     </div>
     <div class="site" data-aos="fade-up">
         <div class="content" style="width: 42vmax;">
-            <h2 class="mb-4">What I have done</h2>
+            <h3 class="mb-4">Some of my projects</h3>
             <div class="row">
                 <div class="col-sm-6">
                     <a href="https://sapphireadventures.net" target="_blank">
