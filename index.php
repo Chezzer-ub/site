@@ -26,11 +26,11 @@
         </div>
     </div>
     <div class="site" data-aos="fade-up">
-        <div class="content">
+        <div class="content" style="width: 42vmax;">
             <h1>What I do</h1>
             <div class="row">
                 <div class="col-sm-6">
-                    <div class="project img-wrap" style="padding-bottom: 56.25%;background:url(asset/img/sapphireadventures.net.png)"></div>
+                    <div class="project img-wrap" style="padding-bottom: 56.25%;background:url(asset/img/sapphireadventures.net.png);background-size: cover;"></div>
                 </div>
             </div>
         </div>
