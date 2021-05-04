@@ -5,7 +5,11 @@ $(document).ready(function(){
         $(".cursor-follow").css("display", "inherit");
         $(".cursor-ring").css("display", "inherit");
 
-        console.log(event);
+        if ($(event.target).attr("hover-color")) {
+            $(".cursor-ring").css("background", $(event.target).attr("hover-color"))
+        } else {
+            $(".cursor-ring").css("background", "rgba(255,255,255,.1)")
+        }
 
         setTimeout(() => {
             $(".cursor-ring").css("top", event.pageY-document.documentElement.scrollTop);
