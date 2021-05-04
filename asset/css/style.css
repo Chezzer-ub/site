@@ -26,24 +26,6 @@ a:hover {
     padding-bottom: 56.25%;
 }
 
-.scroll {
-    overflow-y: auto;
-    height: 100vh;
-    overflow-x: hidden;
-}
-
-.site {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.site .content {
-    width: 30%;
-    margin: auto;
-    margin-top: 350px;
-}
-
 .color-accent {
     color: #FF9F8C;
 }
@@ -82,12 +64,6 @@ h1, h2, h3, h4, h5, h6, strong, b {
 }
 
 @media (max-width: 1000px) {
-    .site .content {
-        width: 80%;
-    }
-    .site {
-        height: 75vh;
-    }
     .cursor-follow, .cursor-ring {
         display: none;
     }
