@@ -75,13 +75,8 @@
         </div>
     </div>
     <div class="site" data-aos="fade-up">
-        <div class="content">
-            <h1>hi, <span class="color-accent">I'm Chezzer</span></h1>
-            <p>A full stack developer with experience in HTML, CSS, jQuery, PHP and NodeJS web frameworks. I love to make cool projects with a touch of art, fun, and mainly, code.</p>
-            <di id="status"></di>
-            <div><i class="fad fa-clock mr-2"></i> <span id="time" class="m-1"></span></div>
-            <div><i class="fad fa-headphones mr-2"></i> <span id="spotify" class="m-1"></span></div>
-            <div id="activity"></div>
+        <div class="content" style="margin: 0; width: 100%;">
+            <a class="btn btn-dark text-center">Contact Me</a>
         </div>
     </div>
     <script src="asset/js/moment.js?<?php echo filemtime("./asset/js/moment.js")?>"></script>
