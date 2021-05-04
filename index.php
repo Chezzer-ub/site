@@ -27,10 +27,12 @@
     </div>
     <div class="site" data-aos="fade-up">
         <div class="content" style="width: 42vmax;">
-            <h1>What I do</h1>
+            <h2 class="mb-4">What I do</h2>
             <div class="row">
                 <div class="col-sm-6">
-                    <div class="project img-wrap" style="padding-bottom: 56.25%;background:url(asset/img/sapphireadventures.net.png);background-size: cover;"></div>
+                    <a href="https://sapphireadventures.net" target="_blank">
+                        <div class="project img-wrap" style="background:url(asset/img/sapphireadventures.net.png);background-size: cover;"></div>
+                    </a>
                 </div>
             </div>
         </div>
