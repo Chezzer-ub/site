@@ -55,6 +55,8 @@ a:hover::after {
 }
 
 .project {
+    border-radius: 5px;
+    border: 3px #212529 solid;
     position: relative;
     width: 100%;
 }
