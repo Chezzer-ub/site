@@ -47,7 +47,7 @@
             </p>
             <div class="row">
                 <div class="col-sm-6 mb-4">
-                    <a href="https://sapphireadventures.net" target="_blank">
+                    <a href="https://sapphireadventures.net" target="_blank" class="noAStyle">
                         <div class="project">
                             <div class="project-label">Sapphire Adventures</div>
                             <div class="project-tags">
@@ -61,7 +61,7 @@
                     </a>
                 </div>
                 <div class="col-sm-6 mb-4">
-                    <a href="https://upbeatradio.net" target="_blank">
+                    <a href="https://upbeatradio.net" target="_blank" class="noAStyle">
                         <div class="project">
                             <div class="project-label">UpBeat Radio</div>
                             <div class="project-tags">
@@ -75,7 +75,7 @@
                     </a>
                 </div>
                 <div class="col-sm-6 mb-4">
-                    <a href="https://bargrooves.live/player" target="_blank">
+                    <a href="https://bargrooves.live/player" target="_blank" class="noAStyle">
                         <div class="project">
                             <div class="project-label">Bargrooves</div>
                             <div class="project-tags">
@@ -89,7 +89,7 @@
                     </a>
                 </div>
                 <div class="col-sm-6 mb-4">
-                    <a href="https://www.rocketspark.com/blog/post/293/meet-the-16-year-old-computer-programmer/" target="_blank">
+                    <a href="https://www.rocketspark.com/blog/post/293/meet-the-16-year-old-computer-programmer/" target="_blank" class="noAStyle">
                         <div class="project">
                             <div class="project-label">Rocketspark</div>
                             <div class="project-tags">

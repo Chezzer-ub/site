@@ -119,11 +119,11 @@ a:hover::after {
     background: rgba(255,255,255,.1);
 }
 
-.project a, .footer i {
+.project a, .footer i, .noAStyle {
     color: #fff;
 }
 
-.project a:hover, .footer i {
+.project a:hover, .noAStyle:hover {
     color: #fff;
 }
 
