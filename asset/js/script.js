@@ -82,7 +82,7 @@ $(document).ready(function(){
 
     updateStats();
     setInterval(updateStats, 10000);
-    feather.replace();
+    $([document.documentElement, document.body]).scrollTop(0);
 });
 
 function scrollTo(q) {
