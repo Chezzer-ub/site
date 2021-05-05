@@ -8,7 +8,7 @@ body {
 }
 
 a {
-    color: rgb(255, 231, 221);
+    color: #FF9F8C;
     position: relative;
     cursor: none;
     text-decoration: none;
@@ -16,7 +16,7 @@ a {
 }
 
 a:hover {
-    color: #ff8066;
+    color: rgb(241, 113, 88);
     text-decoration: none;
 }
 

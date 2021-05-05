@@ -32,7 +32,7 @@
                 I'm a 16 year old developer living in New Zealand. My dream is to full-time web develop for a big time company like <a href="https://rocketspark.com">Rocketspark</a>.
             </p>
             <p>
-                I love making projects with elegant design and fancy features and satisfying users with quality and reliability. Check out my projects <a href="javascript:scrollTo('#work')">down below</a>.
+                I love making projects with elegant design and fancy features and satisfying users with quality and reliability. Check out my current projects <a href="javascript:scrollTo('#work')">down below</a>.
             </p>
             <p>
                 In my free time I work at <a href="https://www.rocketspark.com/blog/post/293/meet-the-16-year-old-computer-programmer/">Rocketspark</a> as a student intern and also attend High School, working towards University (or college) next year.
