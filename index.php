@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="asset/css/style.css?<?php echo filemtime("./asset/css/style.css")?>">
     <link rel="stylesheet" href="asset/css/aos.css?<?php echo filemtime("./asset/css/aos.css")?>">
     <link rel="stylesheet" href="https://use.typekit.net/fmi6uwl.css">
-    <link href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css" rel="stylesheet" />
-    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+    <link href="https://kit-pro.fontawesome.com/releases/v5.14.0/css/pro.min.css" rel="stylesheet" />
     <link rel="shortcut icon" href="/favicon.ico?<?php echo filemtime("./")?>" type="image/x-icon">
     <link rel="icon" href="/favicon.ico?<?php echo filemtime("./")?>" type="image/x-icon">
 </head>
@@ -20,9 +19,9 @@
         <div class="content">
             <h1>hi, <span class="color-accent">I'm Chezzer</span></h1>
             <p>A full stack developer with experience in HTML, CSS, jQuery, PHP and NodeJS web frameworks. I love to make cool projects with a touch of art, fun, and mainly, code.</p>
-            <i id="status-icon" data-feather="circle" class="mr-2"></i> <div id="status" style="margin-left:.25rem" class="d-inline-flex"></div>
-            <div><i data-feather="clock" class="mr-2"></i> <span id="time" class="m-1"></span></div>
-            <div><i data-feather="music" class="mr-2"></i> <span id="spotify" class="m-1"></span></div>
+            <i id="status-icon" class="fas fa-circle mr-2"></i> <div id="status" style="margin-left:.25rem" class="d-inline-flex"></div>
+            <div><i class="fas fa-clock mr-2"></i> <span id="time" class="m-1"></span></div>
+            <div><i class="fas fa-headphones mr-2"></i> <span id="spotify" class="m-1"></span></div>
             <div id="activity"></div>
         </div>
     </div>
@@ -92,9 +91,9 @@
     </div>
     <div class="site footer" data-aos="fade-up">
         <div class="content text-center" style="margin: 0; width: 100%;">
-            <a target="_blank" href="https://twitter.com/ChezzerYT" class="p-2"><i data-feather="twitter" class="fa-2x"></i></a>
+            <a target="_blank" href="https://twitter.com/ChezzerYT" class="p-2"><i class="fab fa-twitter fa-2x"></i></a>
             <a target="_blank" href="https://open.spotify.com/user/chezzercherry" class="p-2"><i class="fab fa-spotify fa-2x"></i></a>
-            <a target="_blank" href="https://instagram.com/ryancherry.nz/" class="p-2"><i data-feather="instagram" class="fa-2x"></i></a>
+            <a target="_blank" href="https://instagram.com/ryancherry.nz/" class="p-2"><i class="fab fa-instagram fa-2x"></i></a>
             <a target="_blank" href="https://discord.bio/p/chezzer" class="p-2"><i class="fab fa-discord fa-2x"></i></a>
         </div>
     </div>
