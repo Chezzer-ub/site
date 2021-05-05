@@ -16,7 +16,7 @@ a {
 }
 
 a:hover {
-    color: #FF9F8C;
+    color: #ff8066;
     text-decoration: none;
 }
 
@@ -38,7 +38,7 @@ a:hover::after {
 
 .site {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
