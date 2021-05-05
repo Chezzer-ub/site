@@ -71,6 +71,21 @@
                         </div>
                     </a>
                 </div>
+                <div class="col-sm-6 mb-4">
+                    <a href="https://chezzer.dev/ricepurity" target="_blank">
+                        <div class="project">
+                            <div class="project-label">Modenized Rice Purity Test</div>
+                            <div class="project-tags">
+                                <span class="badge rounded-pill bg-danger">HTML</span>
+                                <span class="badge rounded-pill bg-primary ml-2">CSS</span>
+                                <span class="badge rounded-pill bg-warning ml-2">JavaScript</span>
+                                <span class="badge rounded-pill bg-info ml-2">PHP</span>
+                                <span class="badge rounded-pill bg-info ml-2">PHP Image</span>
+                            </div>
+                            <img src="asset/img/bargrooves.live.png" hover-color="rgba(132, 27, 132, .5)" width="100%" alt="" class="img-wrap project-background">
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
