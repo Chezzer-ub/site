@@ -57,11 +57,15 @@ $(document).ready(function(){
                 $("#spotify").html("Not listening to anything")
             }
             if (data.active_on_discord_mobile && !data.active_on_discord_desktop) {
-                $("#status").html(`I am currently active on my phone, I am probably out or sleeping, depends on the time.`)
+                $("#status").html(`Online`)
+                $("#status-icon").html(`Online`)
+                $("#status-icon").css("color", "#198754")
             } else if (data.active_on_discord_desktop) {
-                $("#status").html(`I am currently active on my computer, feel free to message me any time.`)
+                $("#status").html(`Online`)
+                $("#status-icon").css("color", "#198754")
             } else {
-                $("#status").html(`I am currently not active right now, I am most likely out or sleeping, feel free to message me but I will not respond immediately.`)
+                $("#status").html(`Offline`)
+                $("#status-icon").css("color", "#d4d4d4")
             }
 
             $("#activity").html("");
