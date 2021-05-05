@@ -96,7 +96,7 @@
                                 <span class="badge rounded-pill bg-warning ml-2">JavaScript</span>
                                 <span class="badge rounded-pill bg-secondary ml-2">Intern</span>
                             </div>
-                            <img src="asset/img/rocketspark.webp" hover-color="rgba(90, 134, 242, .5)" width="100%" alt="" class="img-wrap project-background">
+                            <img src="asset/img/rocketspark.png" hover-color="rgba(90, 134, 242, .5)" width="100%" alt="" class="img-wrap project-background">
                         </div>
                     </a>
                 </div>
