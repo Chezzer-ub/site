@@ -119,6 +119,14 @@ a:hover::after {
     background: rgba(255,255,255,.1);
 }
 
+.project a, .footer i {
+    color: #fff;
+}
+
+.project a:hover, .footer i {
+    color: #fff;
+}
+
 .color-accent {
     color: #FF9F8C;
 }
