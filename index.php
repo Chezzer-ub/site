@@ -166,9 +166,9 @@
             <a target="_blank" href="https://discord.bio/p/chezzer" class="p-2"><i class="fab fa-discord fa-2x"></i></a>
         </div>
     </div>
+    <script src="asset/js/jquery-3.6.0.min.js"></script>
     <script src="asset/js/moment.js"></script>
     <script src="asset/js/bootstrap.bundle.min.js"></script>
-    <script src="asset/js/jquery-3.6.0.min.js"></script>
     <script src="asset/js/script.js?<?php echo filemtime("./asset/js/script.js")?>"></script>
     <script src="asset/js/aos.js"></script>
 </body>
