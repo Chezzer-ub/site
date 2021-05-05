@@ -52,7 +52,7 @@ a:hover::after {
 .project {
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%), 0 6px 11px 0 rgb(0 0 0 / 41%);
     border-radius: 5px;
-    border: 3px #FF9F8C solid;
+    border: 3px #2f343a solid;
     transition: .3s;
     position: relative;
     width: 100%;
