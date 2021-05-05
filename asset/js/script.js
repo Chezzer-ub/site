@@ -82,4 +82,5 @@ $(document).ready(function(){
 
     updateStats();
     setInterval(updateStats, 10000);
+    feather.replace();
 });
