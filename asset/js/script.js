@@ -58,7 +58,7 @@ $(document).ready(function(){
             }
             if (data.active_on_discord_mobile && !data.active_on_discord_desktop) {
                 $("#status").html(`Mobile`)
-                $("#status-icon").css("color", "#198754")
+                $("#status-icon").css("color", "#ffc107")
             } else if (data.active_on_discord_desktop) {
                 $("#status").html(`Online`)
                 $("#status-icon").css("color", "#198754")
