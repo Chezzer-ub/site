@@ -82,7 +82,7 @@
                                 <span class="badge rounded-pill bg-info ml-2">PHP</span>
                                 <span class="badge rounded-pill bg-info ml-2">PHP Image</span>
                             </div>
-                            <img src="asset/img/bargrooves.live.png" hover-color="rgba(132, 27, 132, .5)" width="100%" alt="" class="img-wrap project-background">
+                            <img src="asset/img/purity.png" hover-color="rgba(132, 27, 132, .5)" width="100%" alt="" class="img-wrap project-background">
                         </div>
                     </a>
                 </div>
