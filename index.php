@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hi, I'm Chezzer</title>
-    <link rel="stylesheet" href="asset/css/bootstrap.min.css?<?php echo filemtime("./asset/css/bootstrap.min.css")?>">
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
     <link rel="stylesheet" href="asset/css/style.css?<?php echo filemtime("./asset/css/style.css")?>">
-    <link rel="stylesheet" href="asset/css/aos.css?<?php echo filemtime("./asset/css/aos.css")?>">
+    <link rel="stylesheet" href="asset/css/aos.css">
     <link rel="stylesheet" href="https://use.typekit.net/fmi6uwl.css">
     <link href="https://kit-pro.fontawesome.com/releases/v5.14.0/css/pro.min.css" rel="stylesheet" />
     <link rel="shortcut icon" href="/favicon.ico?<?php echo filemtime("./")?>" type="image/x-icon">
@@ -166,10 +166,10 @@
             <a target="_blank" href="https://discord.bio/p/chezzer" class="p-2"><i class="fab fa-discord fa-2x"></i></a>
         </div>
     </div>
-    <script src="asset/js/moment.js?<?php echo filemtime("./asset/js/moment.js")?>"></script>
-    <script src="asset/js/bootstrap.bundle.min.js?<?php echo filemtime("./asset/js/bootstrap.bundle.min.js")?>"></script>
-    <script src="asset/js/jquery-3.6.0.min.js?<?php echo filemtime("./asset/js/jquery-3.6.0.min.js")?>"></script>
+    <script src="asset/js/moment.js"></script>
+    <script src="asset/js/bootstrap.bundle.min.js"></script>
+    <script src="asset/js/jquery-3.6.0.min.js"></script>
     <script src="asset/js/script.js?<?php echo filemtime("./asset/js/script.js")?>"></script>
-    <script src="asset/js/aos.js?<?php echo filemtime("./asset/js/aos.js")?>"></script>
+    <script src="asset/js/aos.js"></script>
 </body>
 </html>
