@@ -107,6 +107,11 @@ a:hover::after {
     display: flex;
     border-radius: 5px;
     padding: 1rem;
+    transition: .3s;
+}
+
+.tech-item:hover {
+    background: rgba(255,255,255,.1);
 }
 
 .color-accent {
