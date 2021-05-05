@@ -57,8 +57,7 @@ $(document).ready(function(){
                 $("#spotify").html("Not listening to anything")
             }
             if (data.active_on_discord_mobile && !data.active_on_discord_desktop) {
-                $("#status").html(`Online`)
-                $("#status-icon").html(`Online`)
+                $("#status").html(`Mobile`)
                 $("#status-icon").css("color", "#198754")
             } else if (data.active_on_discord_desktop) {
                 $("#status").html(`Online`)
