@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="asset/css/aos.css?<?php echo filemtime("./asset/css/aos.css")?>">
     <link rel="stylesheet" href="https://use.typekit.net/fmi6uwl.css">
     <link href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css" rel="stylesheet" />
-    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
     <link rel="shortcut icon" href="/favicon.ico?<?php echo filemtime("./")?>" type="image/x-icon">
     <link rel="icon" href="/favicon.ico?<?php echo filemtime("./")?>" type="image/x-icon">
 </head>
