@@ -26,8 +26,25 @@
         </div>
     </div>
     <div class="site" data-aos="fade-up">
+        <div class="content">
+            <h3 class="mb-4">What I do</h3>
+            <p>
+                I'm a 16 year old developer living in New Zealand. My dream is to full-time web develop for a big time company like <a href="https://rocketspark.com">Rocketspark</a>.
+            </p>
+            <p>
+                I love making projects with elegant design and fancy features and satisfying users with quality and reliability. Check out my projects <a href="javascript:scrollTo('#work')">down below</a>.
+            </p>
+            <p>
+                In my free time I work at <a href="https://www.rocketspark.com/blog/post/293/meet-the-16-year-old-computer-programmer/">Rocketspark</a> as a student intern and also attend High School, working towards University (or college) next year.
+            </p>
+        </div>
+    </div>
+    <div class="site" data-aos="fade-up" id="work">
         <div class="content" style="width: 42vmax;">
             <h3 class="mb-4">Where I do it</h3>
+            <p>
+                I put pride & passion into all my work. Here are some of my projects that I am currently working on or have finished.
+            </p>
             <div class="row">
                 <div class="col-sm-6 mb-4">
                     <a href="https://sapphireadventures.net" target="_blank">
@@ -72,17 +89,14 @@
                     </a>
                 </div>
                 <div class="col-sm-6 mb-4">
-                    <a href="https://chezzer.dev/ricepurity" target="_blank">
+                    <a href="https://www.rocketspark.com/blog/post/293/meet-the-16-year-old-computer-programmer/" target="_blank">
                         <div class="project">
-                            <div class="project-label">Modenized Rice Purity Test</div>
+                            <div class="project-label">Rocketspark</div>
                             <div class="project-tags">
-                                <span class="badge rounded-pill bg-danger">HTML</span>
-                                <span class="badge rounded-pill bg-primary ml-2">CSS</span>
                                 <span class="badge rounded-pill bg-warning ml-2">JavaScript</span>
-                                <span class="badge rounded-pill bg-info ml-2">PHP</span>
-                                <span class="badge rounded-pill bg-info ml-2">PHP Image</span>
+                                <span class="badge rounded-pill bg-secondary ml-2">Intern</span>
                             </div>
-                            <img src="asset/img/ricepurity.png" hover-color="rgba(22, 198, 12, .5)" width="100%" alt="" class="img-wrap project-background">
+                            <img src="asset/img/rocketspark.webp" hover-color="rgba(90, 134, 242, .5)" width="100%" alt="" class="img-wrap project-background">
                         </div>
                     </a>
                 </div>
@@ -90,7 +104,7 @@
         </div>
     </div>
     <div class="site" data-aos="fade-up">
-        <div class="content" style="width: 42vmax;">
+        <div class="content">
             <h3 class="mb-4">How I do it</h3>
             <div class="row">
                 <div class="col-sm-4 mb-4">

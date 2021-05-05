@@ -84,3 +84,9 @@ $(document).ready(function(){
     setInterval(updateStats, 10000);
     feather.replace();
 });
+
+function scrollTo(q) {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $(q).offset().top
+    }, 1000);
+}
