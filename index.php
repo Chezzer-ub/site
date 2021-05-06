@@ -15,7 +15,7 @@
 <body>
     <div class="cursor-ring"></div>
     <div class="cursor-follow"></div>
-    <div class="site" data-aos="fade-up">
+    <div class="site">
         <div class="content">
             <h1>hi, <span class="color-accent">I'm Chezzer</span></h1>
             <p>A full stack developer with experience in HTML, CSS, jQuery, PHP and NodeJS web frameworks. I love to make cool projects with a touch of art, fun, and mainly, code.</p>
@@ -25,7 +25,7 @@
             <div id="activity"></div>
         </div>
     </div>
-    <div class="site" data-aos="fade-up">
+    <div class="site">
         <div class="content">
             <h3 class="mb-4">What I do</h3>
             <p>
@@ -39,7 +39,7 @@
             </p>
         </div>
     </div>
-    <div class="site" data-aos="fade-up" id="work">
+    <div class="site" id="work">
         <div class="content" style="width: 42vmax;">
             <h3 class="mb-4">Where I do it</h3>
             <p>
@@ -103,7 +103,7 @@
             </div>
         </div>
     </div>
-    <div class="site" data-aos="fade-up">
+    <div class="site">
         <div class="content">
             <h3 class="mb-4">How I do it</h3>
             <div class="row">
@@ -158,7 +158,7 @@
             </div>
         </div>
     </div>
-    <div class="site footer" data-aos="fade-up">
+    <div class="site footer">
         <div class="content text-center" style="margin: 0; width: 100%;">
             <a target="_blank" href="https://twitter.com/ChezzerYT" class="p-2"><i class="fab fa-twitter fa-2x"></i></a>
             <a target="_blank" href="https://open.spotify.com/user/chezzercherry" class="p-2"><i class="fab fa-spotify fa-2x"></i></a>
