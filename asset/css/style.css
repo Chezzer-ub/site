@@ -7,6 +7,11 @@ body {
     overflow-y: auto;
 }
 
+::selection {
+    background: transparent;
+    border-bottom: 1px #fff solid;
+}
+
 a {
     color: #FF9F8C;
     position: relative;
