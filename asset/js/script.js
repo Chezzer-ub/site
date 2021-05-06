@@ -4,9 +4,9 @@ $(document).ready(function(){
         $(".cursor-follow").css("top", event.pageY-document.documentElement.scrollTop);
         $(".cursor-follow").css("display", "inherit");
         $(".cursor-ring").css("display", "inherit");
-        if ($(event.target).attr("hover-color")) {
+        if ($(event.target).attr("hover-color") || $(event.target.parentNode).attr("hover-color")) {
             $(".cursor-ring").css({
-                background: $(event.target).attr("hover-color"),
+                background: $(event.target).attr("hover-color") || $(event.target.parentNode).attr("hover-color"),
                 width: "48px",
                 height: "48px",
                 margin: "-21px 0 0 -21px"
@@ -78,7 +78,6 @@ $(document).ready(function(){
 
     updateStats();
     setInterval(updateStats, 10000);
-    $([document.documentElement, document.body]).scrollTop(0);
 });
 
 function scrollTo(q) {
