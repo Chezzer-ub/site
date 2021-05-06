@@ -54,6 +54,10 @@ h1, h2, h3, h4, h5, h6, strong, b {
     font-weight: 600;
 }
 
+.status {
+    transition: .3s;
+}
+
 .cursor-follow {
     z-index: 2;
     display: none;
