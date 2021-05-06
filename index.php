@@ -19,7 +19,7 @@
         <div class="content">
             <h1>hi, <span class="color-accent">I'm Chezzer</span></h1>
             <p>A full stack developer with experience in HTML, CSS, jQuery, PHP and NodeJS web frameworks. I love to make cool projects with a touch of art, fun, and mainly, code.</p>
-            <div class="status" style="display:none">
+            <div class="status">
                 <i id="status-icon" class="fas fa-circle mr-2"></i> <div id="status" style="margin-left:.25rem" class="d-inline-flex"></div>
                 <div><i class="fal fa-clock mr-2"></i> <span id="time" class="m-1"></span></div>
                 <div><i class="fal fa-headphones mr-2"></i> <span id="spotify" class="m-1"></span></div>
