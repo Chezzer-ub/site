@@ -104,7 +104,7 @@
         </div>
     </div>
     <div class="site">
-        <div class="content">
+        <div class="content" style="width: 34vmax;">
             <h3 class="mb-4">How I do it</h3>
             <div class="row">
                 <div class="col-sm-4 mb-4">
