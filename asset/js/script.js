@@ -80,6 +80,7 @@ function updateStats() {
                 $("#activity").append(`<p><span><i class="fas fa-gamepad"></i> ${item.name}</span></p>`);
             }
         })
+        $(".status").fadeIn()
     })
 }
 
