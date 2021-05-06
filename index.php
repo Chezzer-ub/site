@@ -163,6 +163,7 @@
             <a target="_blank" href="https://twitter.com/ChezzerYT" class="p-2"><i class="fab fa-twitter fa-2x"></i></a>
             <a target="_blank" href="https://open.spotify.com/user/chezzercherry" class="p-2"><i class="fab fa-spotify fa-2x"></i></a>
             <a target="_blank" href="https://instagram.com/ryancherry.nz/" class="p-2"><i class="fab fa-instagram fa-2x"></i></a>
+            <a target="_blank" href="https://github.com/Chezzer-ub/" class="p-2"><i class="fab fa-github fa-2x"></i></a>
             <a target="_blank" href="https://discord.bio/p/chezzer" class="p-2"><i class="fab fa-discord fa-2x"></i></a>
         </div>
     </div>
