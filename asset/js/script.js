@@ -76,10 +76,6 @@ $(document).ready(function(){
         })
     }
 
-    setTimeout(() => {
-        AOS.init();
-    }, 250)
-
     updateStats();
     setInterval(updateStats, 10000);
     $([document.documentElement, document.body]).scrollTop(0);
