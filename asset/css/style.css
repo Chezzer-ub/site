@@ -17,6 +17,24 @@ body {
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
+* {
+    scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+    background-color: hsla(0,0%,100%,.025);
+    -webkit-border-radius: 100px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: hsla(0,0%,100%,.5);
+    -webkit-border-radius: 100px;
+    background-clip: padding-box;
+    border: 2px solid hsla(0,0%,100%,0);
+    min-height: 10px;
+}
+
 a {
     color: #FF9F8C;
     position: relative;
