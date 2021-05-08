@@ -77,7 +77,7 @@ function updateStats() {
         $("#activity").html("");
         data.activities.forEach((item, i) => {
             if (item.id !== "spotify:1" && item.id !== "custom") {
-                $("#activity").append(`<p><span><i class="fas fa-gamepad mr-2"></i> ${item.name}</span></p>`);
+                $("#activity").append(`<div><i class="fas fa-gamepad mr-2"></i> ${item.name}</div>`);
             }
         })
         $(".status").css("opacity", 1)
