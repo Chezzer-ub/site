@@ -169,7 +169,7 @@
             <a target="_blank" href="https://instagram.com/ryancherry.nz/" class="p-2"><i class="fab fa-instagram fa-2x"></i></a>
             <a target="_blank" href="https://github.com/Chezzer-ub/" class="p-2"><i class="fab fa-github fa-2x"></i></a>
             <a target="_blank" href="https://discord.bio/p/chezzer" class="p-2"><i class="fab fa-discord fa-2x"></i></a>
-            <a target="_blank" href="https://calendar.google.com/calendar/u/0/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Pacific/Auckland&src=cnlhbmhhbWlsdG9uY2hlcnJ5QGdtYWlsLmNvbQ&src=OWFsN24yYnJiaGVwODAydmQ2aGJubW9hdWw4Z25wZXBAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZW4ubmV3X3plYWxhbmQjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23E67C73&color=%23009688&color=%230B8043&showTz=1&title=Chezzer's Schedule&mode=WEEK&showTitle=1&showNav=1"><i class="far fa-calendar fa-2x"></i></a>
+            <a target="_blank" href="https://calendar.google.com/calendar/u/0/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Pacific/Auckland&src=cnlhbmhhbWlsdG9uY2hlcnJ5QGdtYWlsLmNvbQ&src=OWFsN24yYnJiaGVwODAydmQ2aGJubW9hdWw4Z25wZXBAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZW4ubmV3X3plYWxhbmQjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23E67C73&color=%23009688&color=%230B8043&showTz=1&title=Chezzer's Schedule&mode=WEEK&showTitle=1&showNav=1" class="p-2"><i class="far fa-calendar fa-2x"></i></a>
         </div>
     </div>
     <script src="asset/js/jquery-3.6.0.min.js"></script>
