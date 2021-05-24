@@ -33,7 +33,7 @@
                 $i = 0;
                 foreach ($files as $file) {
                     if ($i < ($_GET['limit'] ? (int)$_GET['limit'] : 15)) {
-                        echo "<a href=\"https://chezzer.dev/mit/images/{$file}\" target=\"_blank\"><img src=\"https://chezzer.dev/mit/upload?filename={$file}&size=300\" width=\"16.6%\"></a>";
+                        echo "<a href=\"https://chezzer.dev/mit/images/{$file}\" target=\"_blank\"><img src=\"https://chezzer.dev/mit/connect?filename={$file}&size=300\" width=\"16.6%\"></a>";
                     }
                     $i++;
                 }
