@@ -29,7 +29,7 @@
         </div>
         <div id="download">
             <?php 
-                $files = json_decode(file_get_contents("https://chezzer.dev/mit/upload"), true);
+                $files = json_decode(file_get_contents("https://chezzer.dev/mit/connect"), true);
                 $i = 0;
                 foreach ($files as $file) {
                     if ($i < ($_GET['limit'] ? (int)$_GET['limit'] : 15)) {
@@ -44,7 +44,7 @@
 
     <script src="jq.js"></script>
     <script>
-        var socket = new WebSocket("wss://chezzer.dev/mit/ws");
+        var socket = new WebSocket("wss://chezzer.dev/mit/connect");
 
         socket.onmessage = (e) => {
             let data = {};
