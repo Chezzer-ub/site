@@ -77,7 +77,7 @@
             $.ajax({
                 type: "POST",
                 enctype: 'multipart/form-data',
-                url: "https://chezzer.dev/mit/upload",
+                url: "https://chezzer.dev/mit/connect",
                 data:  new FormData(this),
                 processData: false,
                 contentType: false,
