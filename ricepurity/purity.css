@@ -7,10 +7,6 @@ body {
     min-height: 100vh;
 }
 
-* {
-  font-family: 'Montserrat', var(--bs-font-sans-serif) !important;
-}
-
 .footer-text {
   width: 30%;
 }
