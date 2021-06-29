@@ -1,5 +1,5 @@
 body {
-    font-family: 'Montserrat', var(--bs-font-sans-serif);
+    font-family: 'Montserrat', var(--bs-font-sans-serif) !important;
     color: #0f344a;
     background: #fbffff url(background.jpg);
     background-position: bottom;
