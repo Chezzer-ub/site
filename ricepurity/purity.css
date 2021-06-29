@@ -1,11 +1,14 @@
 body {
-    font-family: 'Montserrat', var(--bs-font-sans-serif) !important;
     color: #0f344a;
     background: #fbffff url(background.jpg);
     background-position: bottom;
     background-size: 100%;
     background-repeat: no-repeat;
     min-height: 100vh;
+}
+
+* {
+  font-family: 'Montserrat', var(--bs-font-sans-serif) !important;
 }
 
 .footer-text {
