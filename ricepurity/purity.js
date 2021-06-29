@@ -134,7 +134,7 @@ $("#calculate").on("click", () => {
         $(".score").css("opacity", "1");
         
         $("#final-score").html(score);
-        $("#share").val(`https://chezzer.dev/ricepurity/share/?s=${score}`)
+        $("#share").val(`https://dist.chezzer.dev/ricepurity/share/?s=${score}`)
         
         if (score == 100 || score == 0 || score == 1) {
             $("#score-message").html("😧 Did you cheat?")
