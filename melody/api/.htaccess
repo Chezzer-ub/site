@@ -1,6 +1,0 @@
-Options +SymLinksIfOwnerMatch 
-DirectoryIndex api.php
-RewriteEngine On 
-RewriteCond %{REQUEST_FILENAME} !-f 
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /home/bargrooves/public_chezzer/melody/api/api.php [L]
