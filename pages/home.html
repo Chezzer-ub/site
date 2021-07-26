@@ -1,0 +1,240 @@
+<style>
+    .project-dot {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        transition: .3s all;
+        margin: auto;
+        left: 50%;
+        margin-left: -10px;
+        cursor: pointer;
+        z-index: 1;
+        box-shadow: 0px 4px 13px 0px var(--background-dark);
+    }
+
+    .project-dot::after {
+        border-radius: 50%;
+        border: 2px solid var(--text);
+        content: '';
+        position: absolute;
+        width: calc(100% + 10px);
+        height: calc(100% + 10px);
+        top: -5px;
+        left: -5px;
+        opacity: 0;
+        transition: .3s;
+    }
+
+    .project-dot:hover {
+        transition: .3s all;
+        transform: translate(-.75px, -.75px);
+        width: 22.5px;
+        height: 22.5px;
+    }
+
+    .project-dot.active {
+        transition: .3s all;
+        transform: translate(-2.5px, -2.5px);
+        width: 25px;
+        height: 25px;
+    }
+
+    .project-dot.active::after {
+        opacity: 1;
+    }
+
+    .projects {
+        position: relative;
+    }
+
+    .projects::after {
+        top: 1%;
+        content: '';
+        background: var(--accent);
+        width: 5px;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        margin-top: -10px;
+        margin-left: -2.5px;
+        border-radius: 25px;
+        pointer-events: none;
+        z-index: 0;
+    }
+    
+    .project-inner {
+        transition: .3s;
+    }
+
+    .project-content {
+        max-height: 60vh;
+        padding-right: 2rem;
+        overflow-y: auto;
+    }
+
+    .project-inner a {
+        position: relative;
+    }
+
+    .project-inner a:not(.project-btn)::before {
+        content: '';
+        width: 100%;
+        height: 3px;
+        background: var(--text);
+        position: absolute;
+        bottom:-2px;
+        left:0;
+        transition: .3s;
+    }
+
+    .project-inner a:hover::before {
+        bottom:-1px;
+    }
+
+
+    @media (max-width: 1000px) {
+        .project-content {
+            max-height: 50vh;
+            width: auto !important;
+        }
+    }
+</style>
+<div class="absolute top-0 left-0 site-circle">
+    <svg xmlns="http://www.w3.org/2000/svg" width="444" height="456" viewBox="0 0 444 456"> <circle cx="-9.5" cy="28.5" r="341.5"/> <circle cx="-9.5" cy="28.5" r="291.5"/> </svg>
+</div>
+<div class="absolute bottom-0 right-0 site-circle">
+    <svg xmlns="http://www.w3.org/2000/svg" width="482" height="676" viewBox="0 0 482 676"> <circle class="cls-1" cx="606.062" cy="360.656" r="341.5"/> <path class="cls-2" d="M606.058,69.166c160.991,0,291.5,130.509,291.5,291.5s-130.509,291.5-291.5,291.5-291.5-130.509-291.5-291.5S445.067,69.166,606.058,69.166Zm0,0c160.991,0,291.5,130.509,291.5,291.5s-130.509,291.5-291.5,291.5-291.5-130.509-291.5-291.5S445.067,69.166,606.058,69.166Z"/> <circle class="cls-1" cx="474.86" cy="702.171" r="422.61"/> <path class="cls-2" d="M474.868,341.429c199.231,0,360.739,161.509,360.739,360.74S674.1,1062.91,474.868,1062.91,114.129,901.4,114.129,702.169,275.637,341.429,474.868,341.429Zm0,0c199.231,0,360.739,161.509,360.739,360.74S674.1,1062.91,474.868,1062.91,114.129,901.4,114.129,702.169,275.637,341.429,474.868,341.429Z"/> </svg>
+</div>
+<div class="h-screen grid default-padding">
+    <div class="my-auto">
+        <div class="-mt-16">
+            <h1 class="text-8xl font-light text-outline text-intro">A modern web developer with modern practices.</h1>
+        </div>
+    </div>
+</div>
+
+<div class="h-screen flex bg-alt projects-wrapper relative">
+    <div class="w-1/6 my-10 projects">
+        
+    </div>
+    <div class="w-100 px-10 bg-dark flex project">
+        <div class="my-auto project-inner scrollbar-w-2 scrollbar-track-gray-lighter scrollbar-thumb-rounded scrollbar-thumb-gray scrolling-touch"></div>
+    </div>
+    <div class="absolute right-0 bottom-0 site-circle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="355" viewBox="0 0 1280 355"><path class="cls-1" d="M952.042,195.4H1347.32a156,156,0,0,1,156,156V353a156,156,0,0,1-156,156H952.042a156,156,0,0,1-156-156V351.4A156,156,0,0,1,952.042,195.4Z"/> <path class="cls-1" d="M966.522,240.252H1296.84a111,111,0,0,1,111,111v22.894a111,111,0,0,1-111,111H966.522a111,111,0,0,1-111-111V351.252A111,111,0,0,1,966.522,240.252Z"/> <path class="cls-1" d="M278,230c140.833,0,255,114.167,255,255S418.833,740,278,740,23,625.833,23,485,137.167,230,278,230Zm0,0c140.833,0,255,114.167,255,255S418.833,740,278,740,23,625.833,23,485,137.167,230,278,230Z"/> <path class="cls-1" d="M278,278.617c108.459,0,196.383,87.924,196.383,196.383S386.459,671.383,278,671.383,81.617,583.459,81.617,475,169.541,278.617,278,278.617Zm0,0c108.459,0,196.383,87.924,196.383,196.383S386.459,671.383,278,671.383,81.617,583.459,81.617,475,169.541,278.617,278,278.617Z"/> </svg>
+    </div>
+</div>
+
+<script>
+    var projects = [
+        {
+            name: "Expedition Isles",
+            tags: "Web Design, Web Development, Backend Systems Development, Minecraft Development",
+            description: `
+                EI is one of my major projects, it includes 90% of what I enjoy doing; Minecraft, Web Development and Media, and has one of the 
+                best teams I have ever worked in. We love to build on a massive scale, making giant structures and storylines, 
+                we hope to open later next year, but we will see.
+                <br><br>
+                After I left Sapphire Adventures, I was really looking for a place to call home, I reached out to a bunch of servers to basically no avail. 
+                When I gave up almost all hope, I messaged Jacob (supapap), we had kind of worked together on Sapphire and knew of each other and what our skills were.
+                I asked him if he wanted help with any web development in Kw6Craft (his server at the time) and at this point, not known to me, Jacob was wanting to leave
+                and start his own server, perfect timing. The first couple of weeks was a massive rush for the whole team he had recruited, and felt like we we're on to something
+                big and amazing. The server now is mainly ran by him, me and shrake, and we are having a blast! I honestly am so proud of what
+                we've managed to accomplish so far and I am really looking forward to the future, check out the website for pics down below.
+                <br><br>
+                Anyway, enough about the story, lets talk about the website.
+                <br>
+                The whole thing is built on a Debian 10 machine from Meloncube and runs like a dream, it handles Minecraft so nicely with what we need in terms
+                of performance and speed. It is also a linux environment so it runs <a class="text-light" onclick="project(2)">Cloud Core</a> very well and has massive
+                expandability when paired with the website. Its currently running PHP, MySQL & Bootstrap 5, the login system is completely based off Discord, which makes
+                logging in so much easier and completely latches on to your Discord profile, removing the need to store any passwords. It does come with it's trade-offs
+                though. Discord have a normal API rate-limit and naturally you don't want to spam Discord's API every time a logged-in user visits the site. To combat
+                this I simply stored Discord JSON data inside of a database table and treated it like a cache, worked like a charm first try. Some other interesting 
+                aspects is that the staff integration is completely built into the site, meaning it will contact the server and try to look up a user's groups and give
+                them access to certain pages. This took me ages to figure out and hours staring at the LuckPerms database, but it all worked out. If a user has a staff
+                role, they use staff only pages like they would use any other page, instead of having it on for instance a staff panel or a separate website. Centralize!
+                <br><br>
+                So thats Expedition Isles, I am sure I have left out some details and if you have any questions, send them my way over at my <a href="https://dsc.bio/chezzer" target="_blank">Discord.bio</a>
+            `,
+            links: [
+                {
+                    name: "Website",
+                    href: "https://expeditionisles.net"
+                }
+            ]
+        },
+        {
+            name: "Bunker",
+            tags: "Web Design, Web Development, Backend Systems Development, Radio Development",
+            description: `
+                Facilis ex eum voluptatum in voluptatum. Aut in aliquam ut fuga voluptatem. Minus quae et et consequatur enim illo magnam qui. Aut aut neque consequatur omnis voluptas omnis. Harum fugit nisi qui fuga maxime et et ut.
+            `,
+            links: [
+                {
+                    name: "Website",
+                    href: "https://bunker.dance"
+                }
+            ]
+        },
+        {
+            name: "Cloud Core",
+            tags: "Minecraft Development, NodeJS, Linux, Child Process",
+            description: `
+                Facilis ex eum voluptatum in voluptatum. Aut in aliquam ut fuga voluptatem. Minus quae et et consequatur enim illo magnam qui. Aut aut neque consequatur omnis voluptas omnis. Harum fugit nisi qui fuga maxime et et ut.
+            `,
+            links: [
+                {
+                    name: "Website",
+                    href: "https://bunker.dance"
+                }
+            ]
+        }
+    ]
+
+    var height = 100 / projects.length;
+    projects.forEach((item, i) => {
+        $(".projects").append(`
+            <div data-project="${i}" style="top: ${i*height+(height/projects.length)}%" class="bg-accent rounded-full project-dot ${i == 0 ? 'active' : ''}"></div>
+        `)
+    })
+
+    $("[data-project]").on("click", (e) => {
+        project(Number($(e.currentTarget).attr("data-project")))
+    })
+
+    function project(id) {
+        $("[data-project]").removeClass("active");
+        $(`[data-project=${id}]`).addClass("active");
+        let data = projects[id];
+        let links = "";
+        data.links.forEach((link) => {
+            links += `<a class="bg-body px-4 mr-3 py-1 text-white text-center rounded-full text-sm hover:bg-red-500 transition duration-300 project-btn" href="${link.href}" target="_blank">${link.name}</a>`
+        })
+        $(".project-inner").css("transform", "translateY(-100px)")
+        $(".project-inner").css("opacity", "0")
+        setTimeout(() => {
+            $(".project-inner").css("transition", "0s")
+            $(".project-inner").css("transform", "translateY(100px)")
+        }, 300)
+        setTimeout(() => {
+            $(".project-inner").css("transition", ".3s")
+            $(".project-inner").css("transform", "translateY(0px)")
+            $(".project-inner").css("opacity", "1")
+            $(".project-inner").html(`
+                <h2 class="text-5xl text-accent">${data.name}</h2>
+                <div class="my-4">
+                    <span class="font-mono opacity-50">${data.tags}</span>
+                </div>
+                <div class="mb-5 w-6/12 project-content">
+                    ${data.description}
+                </div>
+                <div class="inline-flex">
+                    ${links}
+                </div>
+            `)
+            
+        }, 310)
+    }
+
+    project(0)
+</script>
