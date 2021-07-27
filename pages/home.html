@@ -161,7 +161,8 @@
                     name: "Website",
                     href: "https://expeditionisles.net"
                 }
-            ]
+            ],
+            time: "29/3/2021 - Present"
         },
         {
             name: "Bunker",
@@ -174,7 +175,8 @@
                     name: "Website",
                     href: "https://bunker.dance"
                 }
-            ]
+            ],
+            time: "6/7/2021 - Present"
         },
         {
             name: "Cloud Core",
@@ -191,7 +193,8 @@
                     name: "GitHub",
                     href: "https://github.com/Chezzer-ub/cloud-core"
                 }
-            ]
+            ],
+            time: "15/5/2021 - Present"
         }
     ]
 
@@ -227,7 +230,7 @@
             $(".project-inner").html(`
                 <h2 class="text-5xl text-accent">${data.name}</h2>
                 <div class="my-4">
-                    <span class="font-mono opacity-50">${data.tags}</span>
+                    <span class="font-mono opacity-50">${data.tags} • ${data.time}</span>
                 </div>
                 <div class="mb-5 w-6/12 project-content">
                     ${data.description}
