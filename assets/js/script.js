@@ -32,4 +32,45 @@ function toggleTheme() {
     }
 }
 
-$("#theme").on("click", toggleTheme)
+$("#theme").on("click", toggleTheme);
+
+$(() => {
+    $.getJSON("https://api.github.com/repos/Chezzer-ub/site/commits?per_page=1", (commit) => {
+        commit = commit[0];
+        $("#commit").html(commit.sha.substr(0, 7));
+        $("#commit-link").attr("href", commit.html_url);
+    })
+
+    updateStatus();
+
+    $(window).scroll(function(){
+        if (window.pageYOffset > 0) {
+            $("footer").css("bottom", "0px")
+        } else {
+            $("footer").css("bottom", "-56px")
+        }
+    });
+})
+
+function updateStatus() {
+    $.getJSON("https://api.lanyard.rest/v1/users/195979856733929472", (data) => {
+        data = data.data;
+        if (data.listening_to_spotify) {
+            $("#spotify").html(`<i class="fab fa-spotify" style="color:#1DB954"></i> <a class="noAStyle" target="_blank" href="https://open.spotify.com/track/${data.spotify.track_id}">${data.spotify.song} by <i>${data.spotify.artist}</i></a>`);
+        } else {
+            $("#spotify").html("");
+        }
+        if (data.active_on_discord_mobile && !data.active_on_discord_desktop) {
+            $("#status").html(`Mobile`)
+            $("#status-icon").css("color", "#ffc107")
+        } else if (data.active_on_discord_desktop) {
+            $("#status").html(`Online`)
+            $("#status-icon").css("color", "#198754")
+        } else {
+            $("#status").html(`Offline`)
+            $("#status-icon").css("color", "#d4d4d4")
+        }
+    })
+}
+
+setInterval(updateStatus, 15000);

@@ -38,7 +38,12 @@ header a {
 }
 
 footer {
+    position: fixed;
     padding: 1rem;
+    bottom: -56px;
+    transition: .3s;
+    z-index: 3;
+    width: 100%;
     text-align: center;
     background: var(--background);
 }
@@ -99,13 +104,21 @@ footer {
     pointer-events: none;
 }
 
+.aspect-ratio-1-1 {
+    aspect-ratio: 1/1;
+}
+
 @media (max-width: 1000px) {
     .site-circle {
         opacity: .25;
     }
 
-    .text-intro {
+    .text-responsive {
         font-size: 3.5em !important;
+    }
+
+    .default-padding {
+        width: 90vw;
     }
 }
 
