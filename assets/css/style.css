@@ -108,6 +108,30 @@ footer {
     aspect-ratio: 1/1;
 }
 
+main a {
+    position: relative;
+    cursor: pointer;
+}
+
+main a:not(.noAStyle)::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: var(--text);
+    position: absolute;
+    bottom:-1px;
+    opacity: .5;
+    left:0;
+    transition: .3s;
+}
+
+main a:hover::after {
+    background: var(--accent);
+    opacity: 1;
+    height: 3px;
+    bottom: -2px;
+}
+
 @media (max-width: 1000px) {
     .site-circle {
         opacity: .25;

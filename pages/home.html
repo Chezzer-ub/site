@@ -72,29 +72,6 @@
         overflow-y: auto;
     }
 
-    .project-inner a {
-        position: relative;
-        cursor: pointer;
-    }
-
-    .project-inner a:not(.project-btn)::before {
-        content: '';
-        width: 100%;
-        height: 2px;
-        background: var(--text);
-        position: absolute;
-        bottom:-1px;
-        opacity: .5;
-        left:0;
-        transition: .3s;
-    }
-
-    .project-inner a:hover::before {
-        opacity: 1;
-        height: 3px;
-        bottom: -2px;
-    }
-
 
     @media (max-width: 1000px) {
         .project-content {
@@ -132,7 +109,7 @@
 <div class="h-screen relative my-auto flex">
     <div class="default-padding flex flex-wrap -mx-4">
         <div class="my-4 px-4 w-full lg:w-1/2 xl:w-1/2 my-auto">
-            <h2 class="text-7xl text-accent text-responsive">My Tech Stack.</h2>
+            <h2 class="text-7xl text-accent text-responsive">My tech stack.</h2>
         </div>
         <div class="my-4 px-4 w-full lg:w-1/2 xl:w-1/2 my-auto">
             <div class="flex flex-wrap -mx-4" id="languages"></div>
@@ -143,6 +120,28 @@
     </div>
     <div class="absolute top-0 right-0 site-circle">
         <svg xmlns="http://www.w3.org/2000/svg" width="360" height="332" viewBox="0 0 360 332"><path class="cls-1" d="M221.5-172C326.71-172,412-86.71,412,18.5S326.71,209,221.5,209,31,123.71,31,18.5,116.29-172,221.5-172Zm0,0C326.71-172,412-86.71,412,18.5S326.71,209,221.5,209,31,123.71,31,18.5,116.29-172,221.5-172Zm0,0C326.71-172,412-86.71,412,18.5S326.71,209,221.5,209,31,123.71,31,18.5,116.29-172,221.5-172Z"/> <path id="Ellipse_1_copy" data-name="Ellipse 1 copy" class="cls-1" d="M221.5-124.782A143.282,143.282,0,1,1,78.218,18.5,143.282,143.282,0,0,1,221.5-124.782Zm0,0A143.282,143.282,0,1,1,78.218,18.5,143.282,143.282,0,0,1,221.5-124.782Zm0,0A143.282,143.282,0,1,1,78.218,18.5,143.282,143.282,0,0,1,221.5-124.782Z"/> <path class="cls-1" d="M364.5-84C469.71-84,555,1.29,555,106.5S469.71,297,364.5,297,174,211.71,174,106.5,259.29-84,364.5-84Zm0,0C469.71-84,555,1.29,555,106.5S469.71,297,364.5,297,174,211.71,174,106.5,259.29-84,364.5-84Zm0,0C469.71-84,555,1.29,555,106.5S469.71,297,364.5,297,174,211.71,174,106.5,259.29-84,364.5-84Z"/> <path id="Ellipse_1_copy-2" data-name="Ellipse 1 copy" class="cls-1" d="M364.5-36.782A143.282,143.282,0,1,1,221.218,106.5,143.282,143.282,0,0,1,364.5-36.782Zm0,0A143.282,143.282,0,1,1,221.218,106.5,143.282,143.282,0,0,1,364.5-36.782Zm0,0A143.282,143.282,0,1,1,221.218,106.5,143.282,143.282,0,0,1,364.5-36.782Z"/> </svg>
+    </div>
+</div>
+
+<div class="h-screen relative my-auto flex bg-alt">
+    <div class="default-padding flex flex-wrap -mx-4">
+        <div class="my-4 px-20 w-full lg:w-1/2 xl:w-1/2 my-auto">
+            <div style="border: solid 5px var(--accent)" class="rounded-full p-8">
+                <img src="/assets/img/me.jpg" draggable="false" width="100%" class="rounded-full aspect-ratio-1-1 object-cover" style="border: solid 5px var(--accent)" alt="">
+            </div>
+        </div>
+        <div class="my-4 px-4 w-full lg:w-1/2 xl:w-1/2 my-auto">
+            <h2 class="text-7xl text-accent text-responsive">A quick summary.</h2>
+            <p class="mt-8">
+                I'm a 16 year old developer, designer, diabetic, photographer & student living in New Zealand. My dream is to work full-time for a big time company like <a href="https://rocketspark.com" target="_blank">Rocketspark</a>.
+            </p>
+            <p class="mt-4">
+                I love making things work, I have made a tonne of custom configurations for applications like OBS, Minecraft, Discord, and many more. I would love to share the code, but it's way too messy and experimental to release to the internet.
+            </p>
+            <p class="mt-4">
+                I have a girlfriend, Aimee <em>(I know right)</em>. She is amazing and always gives me love and happiness. (9/1/21) <span class="text-accent">❤</span>
+            </p>
+        </div>
     </div>
 </div>
 
@@ -229,6 +228,20 @@
             time: "29/3/2021 - Present"
         },
         {
+            name: "Rocketspark",
+            tags: "NodeJS, PHP, Real-Life Work",
+            description: `
+                Facilis ex eum voluptatum in voluptatum. Aut in aliquam ut fuga voluptatem. Minus quae et et consequatur enim illo magnam qui. Aut aut neque consequatur omnis voluptas omnis. Harum fugit nisi qui fuga maxime et et ut.
+            `,
+            links: [
+                {
+                    name: "Website",
+                    href: "https://rocketspark.com"
+                }
+            ],
+            time: "6/11/2020 - Present"
+        },
+        {
             name: "Bunker",
             tags: "Web, Backend Systems, Radio",
             description: `
@@ -279,7 +292,7 @@
         let data = projects[id];
         let links = "";
         data.links.forEach((link) => {
-            links += `<a class="bg-body px-4 mr-3 py-1 text-white text-center rounded-full text-sm hover:bg-red-500 transition duration-300 project-btn" href="${link.href}" target="_blank">${link.name}</a>`
+            links += `<a class="bg-body px-4 mr-3 py-1 text-white text-center rounded-full text-sm hover:bg-red-500 transition duration-300 noAStyle" href="${link.href}" target="_blank">${link.name}</a>`
         })
         $(".project-inner").css("transform", "translateY(-100px)")
         $(".project-inner").css("opacity", "0")
