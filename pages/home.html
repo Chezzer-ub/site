@@ -474,9 +474,6 @@
 
     $.ajax({ 
         url: "https://api.github.com/users/Chezzer-ub/repos?sort=updated&type=owner",
-        headers: {
-            "Authorization": "token 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"
-        },
         success: (repos) => {
             repos.forEach((repo) => {
                 if (!repo.fork) {
