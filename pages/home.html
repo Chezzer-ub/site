@@ -39,6 +39,15 @@
         height: 25px;
     }
 
+    .project-dot:hover .project-name {
+        opacity: 1;
+    }
+
+    .project-dot .project-name {
+        opacity: 0;
+        transition: .3s;
+    }
+
     .project-dot.active::after {
         opacity: 1;
     }
@@ -401,7 +410,7 @@
             time: "15/5/2021 - Present"
         },
         {
-            name: "Coasters andCrafters",
+            name: "Coasters and Crafters",
             tags: "Minecraft Development, PHP, OBS",
             description: `
                 Facilis ex eum voluptatum in voluptatum. Aut in aliquam ut fuga voluptatem. Minus quae et et consequatur enim illo magnam qui. Aut aut neque consequatur omnis voluptas omnis. Harum fugit nisi qui fuga maxime et et ut.
@@ -414,12 +423,37 @@
             ],
             time: "3/8/2020 - Present"
         },
+        {
+            name: "Sapphire Adventures",
+            tags: "Minecraft Development, PHP, JavaScript",
+            description: `
+                Facilis ex eum voluptatum in voluptatum. Aut in aliquam ut fuga voluptatem. Minus quae et et consequatur enim illo magnam qui. Aut aut neque consequatur omnis voluptas omnis. Harum fugit nisi qui fuga maxime et et ut.
+            `,
+            links: [],
+            time: "3/8/2020 - 17/3/2021"
+        },
+        {
+            name: "UpBeatRadio",
+            tags: "Radio Development, PHP, JavaScript",
+            description: `
+                Facilis ex eum voluptatum in voluptatum. Aut in aliquam ut fuga voluptatem. Minus quae et et consequatur enim illo magnam qui. Aut aut neque consequatur omnis voluptas omnis. Harum fugit nisi qui fuga maxime et et ut.
+            `,
+            links: [
+                {
+                    name: "Website",
+                    href: "https://upbeat.pw"
+                }
+            ],
+            time: "1/7/2018 - 28/7/2019"
+        },
     ]
 
     var height = 100 / projects.length;
     projects.forEach((item, i) => {
         $(".projects").append(`
-            <div data-project="${i}" style="top: ${i*height+(height*((i/projects.length)))}%" class="bg-accent rounded-full project-dot ${i == 0 ? 'active' : ''}"></div>
+            <div data-project="${i}" style="top: ${i*height+(height*((i/projects.length)))}%;" class="relative bg-accent rounded-full project-dot ${i == 0 ? 'active' : ''}">
+                <div class="absolute shadow left-0 bg-body ml-10 whitespace-nowrap -mt-1 px-2 py-1 rounded project-name">${item.name}</div>
+            </div>
         `)
     })
 
