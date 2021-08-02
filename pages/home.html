@@ -48,11 +48,11 @@
     }
 
     .projects::after {
-        top: 1%;
+        top: 2vh;
         content: '';
         background: var(--accent);
         width: 5px;
-        height: 100%;
+        height: calc(100% - 2.5vh);
         position: absolute;
         left: 50%;
         margin-top: -10px;
@@ -143,16 +143,34 @@
             </p>
         </div>
     </div>
+    <div class="absolute bottom-0 right-0 site-circle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path class="cls-1" d="M256.457,355.652c109.329,0,197.958,88.629,197.958,197.958S365.786,751.567,256.457,751.567,58.5,662.939,58.5,553.61,147.129,355.652,256.457,355.652Zm0,0c109.329,0,197.958,88.629,197.958,197.958S365.786,751.567,256.457,751.567,58.5,662.939,58.5,553.61,147.129,355.652,256.457,355.652Z"/> <path id="Ellipse_1_copy" data-name="Ellipse 1 copy" class="cls-1" d="M256.457,399.452A154.158,154.158,0,1,1,102.3,553.61,154.158,154.158,0,0,1,256.457,399.452Zm0,0A154.158,154.158,0,1,1,102.3,553.61,154.158,154.158,0,0,1,256.457,399.452Z"/> </svg>
+    </div>
+</div>
+
+<div class="h-screen relative flex">
+    <div class="absolute top-0 left-0 site-circle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path class="cls-1" d="M126.429-164.5c109.329,0,197.958,88.629,197.958,197.958S235.758,231.415,126.429,231.415-71.528,142.786-71.528,33.458,17.1-164.5,126.429-164.5Zm0,0c109.329,0,197.958,88.629,197.958,197.958S235.758,231.415,126.429,231.415-71.528,142.786-71.528,33.458,17.1-164.5,126.429-164.5Z"/> <path id="Ellipse_1_copy" data-name="Ellipse 1 copy" class="cls-1" d="M126.429-120.7A154.158,154.158,0,1,1-27.728,33.458,154.158,154.158,0,0,1,126.429-120.7Zm0,0A154.158,154.158,0,1,1-27.728,33.458,154.158,154.158,0,0,1,126.429-120.7Z"/> <path class="cls-1" d="M-5.543-23.348c109.329,0,197.958,88.629,197.958,197.958S103.786,372.567-5.543,372.567-203.5,283.939-203.5,174.61-114.871-23.348-5.543-23.348Zm0,0c109.329,0,197.958,88.629,197.958,197.958S103.786,372.567-5.543,372.567-203.5,283.939-203.5,174.61-114.871-23.348-5.543-23.348Z"/> <path id="Ellipse_1_copy-2" data-name="Ellipse 1 copy" class="cls-1" d="M-5.543,20.452A154.158,154.158,0,0,1,148.615,174.61,154.157,154.157,0,0,1-5.543,328.767,154.157,154.157,0,0,1-159.7,174.61,154.158,154.158,0,0,1-5.543,20.452Zm0,0A154.158,154.158,0,0,1,148.615,174.61,154.157,154.157,0,0,1-5.543,328.767,154.157,154.157,0,0,1-159.7,174.61,154.158,154.158,0,0,1-5.543,20.452Z"/> </svg>
+    </div>
+    <div class="default-padding py-24">
+        <h2 class="text-7xl mb-16 text-center text-accent">My GitHub Repos</h2>
+        <div class="flex flex-wrap -mx-6" id="repos"></div>
+    </div>
+    <div class="absolute right-0 bottom-0 site-circle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="355" viewBox="0 0 1280 355"><path class="cls-1" d="M952.042,195.4H1347.32a156,156,0,0,1,156,156V353a156,156,0,0,1-156,156H952.042a156,156,0,0,1-156-156V351.4A156,156,0,0,1,952.042,195.4Z"/> <path class="cls-1" d="M966.522,240.252H1296.84a111,111,0,0,1,111,111v22.894a111,111,0,0,1-111,111H966.522a111,111,0,0,1-111-111V351.252A111,111,0,0,1,966.522,240.252Z"/> </svg>
+    </div>
 </div>
 
 <script>
     var languages = [
         {
             name: "HTML",
+            color: "#e34c26",
             image: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIiA/Pgo8c3ZnIHdpZHRoPSIyNTZweCIgaGVpZ2h0PSIyNTZweCIgdmlld0JveD0iMCAwIDI1NiAzNjEiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQiPgogICAgPGc+CiAgICAgICAgPHBhdGggZD0iTTI1NS41NTQ4MTMsNzAuNzY1NzE0MyBMMjMyLjMxMzY3LDMzMS4xMjU0NTEgTDEyNy44NDM4NjgsMzYwLjA4NzkxMiBMMjMuNjYxNzE0MywzMzEuMTY2MjQyIEwwLjQ0NTE4NjgxMyw3MC43NjU3MTQzIEwyNTUuNTU0ODEzLDcwLjc2NTcxNDMgTDI1NS41NTQ4MTMsNzAuNzY1NzE0MyBaIiBmaWxsPSIjRTQ0RDI2Ij48L3BhdGg+CiAgICAgICAgPHBhdGggZD0iTTEyOCwzMzcuOTUwMjQyIEwyMTIuNDE2NzAzLDMxNC41NDY2MzcgTDIzMi4yNzc4MDIsOTIuMDU3MzE4NyBMMTI4LDkyLjA1NzMxODcgTDEyOCwzMzcuOTUwMjQyIEwxMjgsMzM3Ljk1MDI0MiBaIiBmaWxsPSIjRjE2NTI5Ij48L3BhdGg+CiAgICAgICAgPHBhdGggZD0iTTgyLjgyMDIxOTgsMTU1LjkzMjEzMiBMMTI4LDE1NS45MzIxMzIgTDEyOCwxMjMuOTk0NzI1IEw0Ny45MTcwMTEsMTIzLjk5NDcyNSBMNDguNjgxNDk0NSwxMzIuNTYyOTg5IEw1Ni41MzA5ODksMjIwLjU3MjgzNSBMMTI4LDIyMC41NzI4MzUgTDEyOCwxODguNjM2MTMyIEw4NS43Mzg5MDExLDE4OC42MzYxMzIgTDgyLjgyMDIxOTgsMTU1LjkzMjEzMiBMODIuODIwMjE5OCwxNTUuOTMyMTMyIFoiIGZpbGw9IiNFQkVCRUIiPjwvcGF0aD4KICAgICAgICA8cGF0aCBkPSJNOTAuMDE3NzU4MiwyMzYuNTQxODkgTDU3Ljk1Nzk3OCwyMzYuNTQxODkgTDYyLjQzMjM1MTYsMjg2LjY4NzY0OCBMMTI3Ljg1MzAxMSwzMDQuODQ4ODc5IEwxMjgsMzA0LjgwODA4OCBMMTI4LDI3MS41ODAxMzIgTDEyNy44NjAwNDQsMjcxLjYxNzQwNyBMOTIuMjkxNTE2NSwyNjIuMDEzMTg3IEw5MC4wMTc3NTgyLDIzNi41NDE4OSBMOTAuMDE3NzU4MiwyMzYuNTQxODkgWiIgZmlsbD0iI0VCRUJFQiI+PC9wYXRoPgogICAgICAgIDxwYXRoIGQ9Ik0xMjcuODg5NTgyLDIyMC41NzI4MzUgTDE2Ny4yMTY1MjcsMjIwLjU3MjgzNSBMMTYzLjUwOTQ1MSwyNjEuOTkyNzkxIEwxMjcuODg5NTgyLDI3MS42MDY4NTcgTDEyNy44ODk1ODIsMzA0LjgzMzQwNyBMMTkzLjM2MjI4NiwyODYuNjg3NjQ4IEwxOTMuODQyNjM3LDI4MS4yOTE5NTYgTDIwMS4zNDc1MTYsMTk3LjIxMjEzMiBMMjAyLjEyNjc2OSwxODguNjM2MTMyIEwxMjcuODg5NTgyLDE4OC42MzYxMzIgTDEyNy44ODk1ODIsMjIwLjU3MjgzNSBMMTI3Ljg4OTU4MiwyMjAuNTcyODM1IFoiIGZpbGw9IiNGRkZGRkYiPjwvcGF0aD4KICAgICAgICA8cGF0aCBkPSJNMTI3Ljg4OTU4MiwxNTUuODU0MDY2IEwxMjcuODg5NTgyLDE1NS45MzIxMzIgTDIwNS4wMzI3OTEsMTU1LjkzMjEzMiBMMjA1LjY3MzQ5NSwxNDguNzUzNTgyIEwyMDcuMTI4NjE1LDEzMi41NjI5ODkgTDIwNy44OTIzOTYsMTIzLjk5NDcyNSBMMTI3Ljg4OTU4MiwxMjMuOTk0NzI1IEwxMjcuODg5NTgyLDE1NS44NTQwNjYgTDEyNy44ODk1ODIsMTU1Ljg1NDA2NiBaIiBmaWxsPSIjRkZGRkZGIj48L3BhdGg+CiAgICA8L2c+Cjwvc3ZnPgo="
         },
         {
             name: "CSS",
+            color: "#563d7c",
             image: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIiA/Pgo8c3ZnIHdpZHRoPSIyNTZweCIgaGVpZ2h0PSIyNTZweCIgdmlld0JveD0iMCAwIDI1NiAzNjEiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQiPgogICAgPGc+CiAgICAgICAgPHBhdGggZD0iTTEyNy44NDM4NjgsMzYwLjA4NzkxMiBMMjMuNjYxNzE0MywzMzEuMTY2MjQyIEwwLjQ0NTE4NjgxMyw3MC43NjU3MTQzIEwyNTUuNTU0ODEzLDcwLjc2NTcxNDMgTDIzMi4zMTM2NywzMzEuMTI1NDUxIEwxMjcuODQzODY4LDM2MC4wODc5MTIgTDEyNy44NDM4NjgsMzYwLjA4NzkxMiBaIiBmaWxsPSIjMjY0REU0Ij48L3BhdGg+CiAgICAgICAgPHBhdGggZD0iTTIxMi40MTY3MDMsMzE0LjU0NjYzNyBMMjMyLjI3NzgwMiw5Mi4wNTczMTg3IEwxMjgsOTIuMDU3MzE4NyBMMTI4LDMzNy45NTAyNDIgTDIxMi40MTY3MDMsMzE0LjU0NjYzNyBMMjEyLjQxNjcwMywzMTQuNTQ2NjM3IFoiIGZpbGw9IiMyOTY1RjEiPjwvcGF0aD4KICAgICAgICA8cGF0aCBkPSJNNTMuNjY4NTcxNCwxODguNjM2MTMyIEw1Ni41MzA5ODksMjIwLjU3MjgzNSBMMTI4LDIyMC41NzI4MzUgTDEyOCwxODguNjM2MTMyIEw1My42Njg1NzE0LDE4OC42MzYxMzIgTDUzLjY2ODU3MTQsMTg4LjYzNjEzMiBaIiBmaWxsPSIjRUJFQkVCIj48L3BhdGg+CiAgICAgICAgPHBhdGggZD0iTTQ3LjkxNzAxMSwxMjMuOTk0NzI1IEw1MC44MjAyMTk4LDE1NS45MzIxMzIgTDEyOCwxNTUuOTMyMTMyIEwxMjgsMTIzLjk5NDcyNSBMNDcuOTE3MDExLDEyMy45OTQ3MjUgTDQ3LjkxNzAxMSwxMjMuOTk0NzI1IFoiIGZpbGw9IiNFQkVCRUIiPjwvcGF0aD4KICAgICAgICA8cGF0aCBkPSJNMTI4LDI3MS41ODAxMzIgTDEyNy44NjAwNDQsMjcxLjYxNzQwNyBMOTIuMjkxNTE2NSwyNjIuMDEzMTg3IEw5MC4wMTc3NTgyLDIzNi41NDE4OSBMNTcuOTU3OTc4LDIzNi41NDE4OSBMNjIuNDMyMzUxNiwyODYuNjg3NjQ4IEwxMjcuODUzMDExLDMwNC44NDg4NzkgTDEyOCwzMDQuODA4MDg4IEwxMjgsMjcxLjU4MDEzMiBMMTI4LDI3MS41ODAxMzIgWiIgZmlsbD0iI0VCRUJFQiI+PC9wYXRoPgogICAgICAgIDxwYXRoIGQ9Ik0yMDIuMTI2NzY5LDE4OC42MzYxMzIgTDIwNy44OTIzOTYsMTIzLjk5NDcyNSBMMTI3Ljg4OTU4MiwxMjMuOTk0NzI1IEwxMjcuODg5NTgyLDE1NS45MzIxMzIgTDE3Mi44OTIxMzIsMTU1LjkzMjEzMiBMMTY5Ljk4NjExLDE4OC42MzYxMzIgTDEyNy44ODk1ODIsMTg4LjYzNjEzMiBMMTI3Ljg4OTU4MiwyMjAuNTcyODM1IEwxNjcuMjE2NTI3LDIyMC41NzI4MzUgTDE2My41MDk0NTEsMjYxLjk5Mjc5MSBMMTI3Ljg4OTU4MiwyNzEuNjA2ODU3IEwxMjcuODg5NTgyLDMwNC44MzM0MDcgTDE5My4zNjIyODYsMjg2LjY4NzY0OCBMMTkzLjg0MjYzNywyODEuMjkxOTU2IEwyMDEuMzQ3NTE2LDE5Ny4yMTIxMzIgTDIwMi4xMjY3NjksMTg4LjYzNjEzMiBMMjAyLjEyNjc2OSwxODguNjM2MTMyIFoiIGZpbGw9IiNGRkZGRkYiPjwvcGF0aD4KICAgIDwvZz4KPC9zdmc+Cg=="
         },
         {
@@ -160,11 +178,13 @@
             image: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjU2cHgiIGhlaWdodD0iMTU0cHgiIHZpZXdCb3g9IjAgMCAyNTYgMTU0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIj4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCB4MT0iLTIuNzc3Nzc3NzglIiB5MT0iMzIlIiB4Mj0iMTAwJSIgeTI9IjY3LjU1NTU1NTYlIiBpZD0ibGluZWFyR3JhZGllbnQtMSI+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMyMjk4QkQiIG9mZnNldD0iMCUiPjwvc3RvcD4KICAgICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzBFRDdCNSIgb2Zmc2V0PSIxMDAlIj48L3N0b3A+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnPgogICAgICAgIDxwYXRoIGQ9Ik0xMjgsLTEuMDY1ODE0MWUtMTQgQzkzLjg2NjY2NjcsLTEuMDY1ODE0MWUtMTQgNzIuNTMzMzMzMywxNy4wNjY2NjY3IDY0LDUxLjIgQzc2LjgsMzQuMTMzMzMzMyA5MS43MzMzMzMzLDI3LjczMzMzMzMgMTA4LjgsMzIgQzExOC41Mzc0ODEsMzQuNDM0MzcwNCAxMjUuNDk3MzYzLDQxLjQ5ODU0ODEgMTMzLjIwMTA2Nyw0OS4zMTg0IEMxNDUuNzUwNzU2LDYyLjA1Njc3MDQgMTYwLjI3NTQzNyw3Ni44IDE5Miw3Ni44IEMyMjYuMTMzMzMzLDc2LjggMjQ3LjQ2NjY2Nyw1OS43MzMzMzMzIDI1NiwyNS42IEMyNDMuMiw0Mi42NjY2NjY3IDIyOC4yNjY2NjcsNDkuMDY2NjY2NyAyMTEuMiw0NC44IEMyMDEuNDYyNTE5LDQyLjM2NTYyOTYgMTk0LjUwMjYzNywzNS4zMDE0NTE5IDE4Ni43OTg5MzMsMjcuNDgxNiBDMTc0LjI0OTI0NCwxNC43NDMyMjk2IDE1OS43MjQ1NjMsLTEuMDY1ODE0MWUtMTQgMTI4LC0xLjA2NTgxNDFlLTE0IFogTTY0LDc2LjggQzI5Ljg2NjY2NjcsNzYuOCA4LjUzMzMzMzMzLDkzLjg2NjY2NjcgMCwxMjggQzEyLjgsMTEwLjkzMzMzMyAyNy43MzMzMzMzLDEwNC41MzMzMzMgNDQuOCwxMDguOCBDNTQuNTM3NDgxNSwxMTEuMjM0MzcgNjEuNDk3MzYzLDExOC4yOTg1NDggNjkuMjAxMDY2NywxMjYuMTE4NCBDODEuNzUwNzU1NiwxMzguODU2NzcgOTYuMjc1NDM3LDE1My42IDEyOCwxNTMuNiBDMTYyLjEzMzMzMywxNTMuNiAxODMuNDY2NjY3LDEzNi41MzMzMzMgMTkyLDEwMi40IEMxNzkuMiwxMTkuNDY2NjY3IDE2NC4yNjY2NjcsMTI1Ljg2NjY2NyAxNDcuMiwxMjEuNiBDMTM3LjQ2MjUxOSwxMTkuMTY1NjMgMTMwLjUwMjYzNywxMTIuMTAxNDUyIDEyMi43OTg5MzMsMTA0LjI4MTYgQzExMC4yNDkyNDQsOTEuNTQzMjI5NiA5NS43MjQ1NjMsNzYuOCA2NCw3Ni44IFoiIGZpbGw9InVybCgjbGluZWFyR3JhZGllbnQtMSkiPjwvcGF0aD4KICAgIDwvZz4KPC9zdmc+Cg=="
         },
         {
+            color: "#f1e05a",
             name: "JavaScript",
             image: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIiA/Pgo8c3ZnIHdpZHRoPSIyNTZweCIgaGVpZ2h0PSIyNTZweCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQiPgogICAgPGc+CiAgICAgICAgPHBhdGggZD0iTTAsMCBMMjU2LDAgTDI1NiwyNTYgTDAsMjU2IEwwLDAgWiIgZmlsbD0iI0Y3REYxRSI+PC9wYXRoPgogICAgICAgIDxwYXRoIGQ9Ik02Ny4zMTE3NDYsMjEzLjkzMjI5MiBMODYuOTAyNjU0LDIwMi4wNzYyNDEgQzkwLjY4MjEwNzksMjA4Ljc3NzM0NiA5NC4xMjAyMjg2LDIxNC40NDcxMzcgMTAyLjM2NzA4NiwyMTQuNDQ3MTM3IEMxMTAuMjcyMjAzLDIxNC40NDcxMzcgMTE1LjI1NjA3NiwyMTEuMzU0ODE5IDExNS4yNTYwNzYsMTk5LjMyNjg4MyBMMTE1LjI1NjA3NiwxMTcuNTI4Nzg3IEwxMzkuMzEzNTc1LDExNy41Mjg3ODcgTDEzOS4zMTM1NzUsMTk5LjY2Njk5NyBDMTM5LjMxMzU3NSwyMjQuNTg0MzMgMTI0LjcwNzc1OSwyMzUuOTI1OTQzIDEwMy4zOTg0LDIzNS45MjU5NDMgQzg0LjE1MzI5NTIsMjM1LjkyNTk0MyA3Mi45ODE5NDI5LDIyNS45NTg2MDMgNjcuMzExMzM5NywyMTMuOTMwMjYiIGZpbGw9IiMwMDAwMDAiPjwvcGF0aD4KICAgICAgICA8cGF0aCBkPSJNMTUyLjM4MDk1MiwyMTEuMzU0NDEzIEwxNzEuOTY5NDIyLDIwMC4wMTI4IEMxNzcuMTI1OTk0LDIwOC40MzM5ODEgMTgzLjgyNzkxMSwyMTQuNjE5ODM1IDE5NS42ODQzNjgsMjE0LjYxOTgzNSBDMjA1LjY1MjUyMSwyMTQuNjE5ODM1IDIxMi4wMDkwNDEsMjA5LjYzNTk2MiAyMTIuMDA5MDQxLDIwMi43NjIxNTkgQzIxMi4wMDkwNDEsMTk0LjUxMzY3NiAyMDUuNDc5NDE2LDE5MS41OTIwMjUgMTk0LjQ4MTE2OCwxODYuNzgyMDcgTDE4OC40Njg0MTksMTg0LjIwMjU2NSBDMTcxLjExMTIxMywxNzYuODE0NzMgMTU5LjU5NzMwOCwxNjcuNTM1MzQgMTU5LjU5NzMwOCwxNDcuOTQ0ODM4IEMxNTkuNTk3MzA4LDEyOS45MDEzMDggMTczLjM0NDUwOCwxMTYuMTUzMjk1IDE5NC44MjU3NTIsMTE2LjE1MzI5NSBDMjEwLjExOTkyNCwxMTYuMTUzMjk1IDIyMS4xMTc3NjUsMTIxLjQ4MDk0IDIyOS4wMjE2NjMsMTM1LjQwMDQzMiBMMjEwLjI5MDU5LDE0Ny40Mjg3NzUgQzIwNi4xNjYxNDYsMTQwLjA0MDEyNyAyMDEuNjk5NTU2LDEzNy4xMTkyODkgMTk0LjgyNjE1OSwxMzcuMTE5Mjg5IEMxODcuNzgwNDcsMTM3LjExOTI4OSAxODMuMzEyMjU0LDE0MS41ODcwOTggMTgzLjMxMjI1NCwxNDcuNDI4Nzc1IEMxODMuMzEyMjU0LDE1NC42NDYzNDkgMTg3Ljc4MDQ3LDE1Ny41Njg0MDYgMTk4LjA4OTk1NiwxNjIuMDM2NjIyIEwyMDQuMTAzOTI0LDE2NC42MTQwOTUgQzIyNC41NTM0NDgsMTczLjM3ODY0MSAyMzYuMDY3MzUyLDE4Mi4zMTM0NDggMjM2LjA2NzM1MiwyMDIuNDE4Mzg3IEMyMzYuMDY3MzUyLDIyNC4wNzE5MjQgMjE5LjA1NTEzNywyMzUuOTI3OTc1IDE5Ni4yMDA0MzIsMjM1LjkyNzk3NSBDMTczLjg2MDk3OCwyMzUuOTI3OTc1IDE1OS40MjU4MjksMjI1LjI3NDMxMSAxNTIuMzgxMzU5LDIxMS4zNTQ0MTMiIGZpbGw9IiMwMDAwMDAiPjwvcGF0aD4KICAgIDwvZz4KPC9zdmc+Cg=="
         },
         {
             name: "PHP",
+            color: "#4F5D95",
             image: "/assets/img/php.svg"
         },
         {
@@ -185,8 +205,25 @@
         }
     ]
 
+    function getLanguageColor(language) {
+        language = languages.find(item => item.name === language);
+        if (language) {
+            return language;
+        } else {
+            return {
+                color: "#333"
+            }
+        }
+    }
+
     languages.forEach((language) => {
-        $("#languages").append(`<div class="my-3 px-3 w-1/2 lg:w-1/3 xl:w-1/3 relative"><div class="bg-alt rounded p-5"><img class="w-24 h-24 m-auto -mt-3" alt="${language.name}" draggable="false" src="${language.image}"></div></div>`)
+        $("#languages").append(`
+            <div class="my-3 px-3 w-1/2 lg:w-1/3 xl:w-1/3 relative">
+                <div class="bg-alt rounded p-5">
+                    <img class="w-24 h-24 m-auto -mt-3" alt="${language.name}" draggable="false" src="${language.image}">
+                </div>
+            </div>
+        `)
     })
 
     var projects = [
@@ -201,7 +238,9 @@
                 After I left Sapphire Adventures, I was really looking for a place to call home, I reached out to a bunch of servers to basically no avail. 
                 When I gave up almost all hope, I messaged Jacob (supapap), we had kind of worked together on Sapphire and knew of each other and what our skills were.
                 I asked him if he wanted help with any web development in Kw6Craft (his server at the time) and at this point, not known to me, Jacob was wanting to leave
-                and start his own server, perfect timing. The first couple of weeks was a massive rush for the whole team he had recruited, and felt like we we're on to something
+                and start his own server, perfect timing. 
+                <br><br>
+                The first couple of weeks was a massive rush for the whole team he had recruited, and felt like we we're on to something
                 big and amazing. The server now is mainly ran by him, me and shrake, and we are having a blast! I honestly am so proud of what
                 we've managed to accomplish so far and I am really looking forward to the future, check out the website for pics down below.
                 <br><br>
@@ -209,11 +248,14 @@
                 <br>
                 The whole thing is built on a Debian 10 machine from Meloncube and runs like a dream, it handles Minecraft so nicely with what we need in terms
                 of performance and speed. It is also a linux environment so it runs <a class="text-light" onclick="project(2)">Cloud Core</a> very well and has massive
-                expandability when paired with the website. Its currently running PHP, MySQL & Bootstrap 5, the login system is completely based off Discord, which makes
+                expandability when paired with the website. 
+                <br><br>
+                Its currently running PHP, MySQL & Bootstrap 5, the login system is completely based off Discord, which makes
                 logging in so much easier and completely latches on to your Discord profile, removing the need to store any passwords. It does come with it's trade-offs
                 though. Discord have a normal API rate-limit and naturally you don't want to spam Discord's API every time a logged-in user visits the site. To combat
-                this I simply stored Discord JSON data inside of a database table and treated it like a cache, worked like a charm first try. Some other interesting 
-                aspects is that the staff integration is completely built into the site, meaning it will contact the server and try to look up a user's groups and give
+                this I simply stored Discord JSON data inside of a database table and treated it like a cache, worked like a charm first try. 
+                <br><br>
+                Some other interesting  aspects is that the staff integration is completely built into the site, meaning it will contact the server and try to look up a user's groups and give
                 them access to certain pages. This took me ages to figure out and hours staring at the LuckPerms database, but it all worked out. If a user has a staff
                 role, they use staff only pages like they would use any other page, instead of having it on for instance a staff panel or a separate website. Centralize!
                 <br><br>
@@ -223,20 +265,105 @@
                 {
                     name: "Website",
                     href: "https://expeditionisles.net"
+                },
+                {
+                    name: "Twitter",
+                    href: "https://twitter.com/ExpeditionIsles"
+                },
+                {
+                    name: "YouTube",
+                    href: "https://www.youtube.com/channel/UCXdw0fkmtR8aq1OM6vMoSnQ"
                 }
             ],
             time: "29/3/2021 - Present"
         },
         {
             name: "Rocketspark",
-            tags: "NodeJS, PHP, Real-Life Work",
+            tags: "NodeJS, PHP, Real-Life Work, Internship",
             description: `
-                Facilis ex eum voluptatum in voluptatum. Aut in aliquam ut fuga voluptatem. Minus quae et et consequatur enim illo magnam qui. Aut aut neque consequatur omnis voluptas omnis. Harum fugit nisi qui fuga maxime et et ut.
+                I originally joined Rocketspark as an un-paid intern. The way I managed to get this sweet deal of a job is by a very long story...
+                <br><br>
+                My school's internet system is pretty sub-average, I normally get around 7-10mbps if I'm lucky, but every lunch time I would sit in 
+                the library and browse reddit and code. Sure this was enough for quite a while, but when 2020 came around, ~300 year 9's joined the 
+                school, and of course they needed a place to go, so a lot of them decided the library was good.
+                <br><br>
+                The speeds dropped to around 1mbps and the connection was utter ass, things like complete drops and really slow loading times occurred, 
+                and it wasn't just me who was feeling the pain. A lot of my friends do the same as me, and they were about to melt down at the speeds.
+                So I tried to come up with a solution. My school has these things in the floor that house power and ethernet cables. I thought, "Maybe, 
+                just maybe I can put a modem down there and configure it as an access point". So I did. My friend Harrison had an old modem from the early 
+                2010s lying around that was small enough to fit in the very tight space in the floor, but it worked, even though it looked a bit weird as 
+                the modem had to push the cover up a tiny bit. The main thing is it worked. 
+                <br><br>
+                Over the next couple of months we reaped the benefit of a WiFi signal not having to travel across the library into the PoE modem that was 
+                under a magnitude of strain, but it wasn't perfect. The connection was still slow, sure there weren't dropouts, but its still pretty bad 
+                as the modem is around 10 years old. So I wanted to upgrade. I can't easily hide a modern modem inside of the service holes in the floor 
+                so I had to figure out a new solution, a solution that would doom me in the coming months.
+                <br><br>
+                I had an old Vodafone modem lying around that was used to run the guest network in my house, it was good, capable of 5G and reasonably 
+                normal looking. We kept it underneath a library stand where books we're displayed, close to an ethernet port on the wall, and just plugged 
+                it in every lunch time. This worked, but we wanted a better solution and we were worried that someone would see it and take it. Well that 
+                happened, but not exactly. A librarian teacher saw it when she was moving the stand and gave it to the student office not knowing what it was, 
+                Months passed and we accepted that it had been stolen, but one day my friend Dan was getting something from the student office and thought he saw 
+                something like it on one of the desks, and surely enough, there it was.
+                <br><br>
+                We were careful now, only having the modem in my bag, but this was so annoying. We needed a better option. One day, I am at the library main desk, 
+                where students scan other students books. The computer has a reasonably sizeable space beneath it, and a spare ethernet port. I take this opportunity 
+                and slap the modem under it.
+                <br><br>
+                It works even better than before, we now name the network to "CHS_LIBRARY" to feel official, and never released the password (which was "startrek" 
+                if anyone is wondering). Things were good for a couple months, it was fast, reliable and didn't put us into any trouble as normal librarians just 
+                thought it was apart of the computer that scanned books. But around 4 months after we planted the modem, disaster struck.
+                <br><br>
+                One of the system-admin staff at our school (there were 2) spotted something flashing below the computer when he was in the room that it was in, he 
+                made sure it wasn't the other system-admin staff member who put it there and unplugged it, waiting for the person who owned it to come and plug it 
+                back in (pretty genius if you ask me). Surely enough I noticed it had been turned off one lunch time, and went to plug it back in. The staff member 
+                didn't get to it in time and saw it plugged in again, so he repeated the process. This happened 3 times until he just plainly asked the student 
+                manning the scanner computer who did it. Typically one of my friends were on it that day and couldn't hold a straight face. To be fair, I really 
+                should've taken it out when it got unplugged, but naive me thought someone was just being a dick.
+                <br><br>
+                My friend rats me out, which is understandable since I would've probably done that to me if I was asked who was the owner of the modem. He approached 
+                my table and said the whole story and asked me to come or it would lead to something bigger that it already is. They unplugged the modem and took me 
+                to the system-admin boss (the other guy). I was shitting my pants when I was walking down the hallway of admin block to his office, but I realistically 
+                hadn't broken any rules and could argue that its the same as putting a laptop into the ethernet cable. My school really does not like VPNs, so I was smart 
+                not to put one on the modem as that could've ended badly.
+                <br><br>
+                I walk into the room, he says "What's your name?",<br>
+                I answer with "Ryan",<br>
+                He recognizes my name from the school URL logging system, which I find really spooky.<br>
+                The rest of the conversation basically includes how I did it (<em>which is just a modem in access point mode</em>), and why I did it (<em> which I already 
+                explained above</em>). He said that they were going to contact my parents, but that didn't scare me as I was telling them more or less about this whole thing. 
+                They scheduled a meeting with them and I was released with no punishment yet.
+                <br><br>
+                My Dad is the only one able to attend the meeting, and I don't get invited. He basically argues that I am not being challenged at school, and needed something 
+                more to learn. This voids any punishment for me at all and I just get a warning. They accept this, and tell my Dad about this new cool thing called Rocketspark 
+                and how they could contact them to "further" my learning, and so my Dad agreed.
+                <br><br>
+                That's the story how I bended the rules at my school, and got an intern job out of it, completely hassle free. Pretty crazy, right?
+                <br><br>
+                Working at Rocketspark is a dream, the workplace is very nice and communicative. I started out working with Richard, learning a bit of vue.js, but then was quickly 
+                contacted by Jason about a way we could transfer people's sites coming from other providers like Wix and Squarespace. It would involve me manually looking at the sites 
+                and re-creating them on Rocketspark's web builder, and they would <em>pay me</em>.
+                <br></br>
+                I instantly accepted and he started to give me the basics of the editor. From there I started doing a lot of odd jobs, mainly doing the hard work with code. 
+                It was amazing to be able to help them gain a lot of clients by doing the hard work for them, and get paid to do it aswell. As an employee I was able to attend 
+                all their events (outside of school) and was able to attend my first fine dining experience at the Launch Awards. It was a very new experience for me, and after 
+                I had <a href="https://www.rocketspark.com/blog/post/293/meet-the-16-year-old-computer-programmer/" target="_blank">an article</a> written on the Rocketspark website, 
+                I was pretty popular.
+                <br><br>
+                And here I am today, still working there earning a pretty amazing paycheck and employing my friends to help me where needed, its pretty amazing and can't wait to see 
+                where this eventually leads me. The story on how I got here isn't really known to Rocketspark, so I thought I'd make it extra detailed so they and you can have a 
+                laugh how I did this, and who knows, I might be able to become a developer here someday.
+                <br><br>
+                Check out the website and my article with the buttons below.
             `,
             links: [
                 {
                     name: "Website",
                     href: "https://rocketspark.com"
+                },
+                {
+                    name: "Blog Article",
+                    href: "https://www.rocketspark.com/blog/post/293/meet-the-16-year-old-computer-programmer/"
                 }
             ],
             time: "11/6/2020 - Present"
@@ -292,7 +419,7 @@
     var height = 100 / projects.length;
     projects.forEach((item, i) => {
         $(".projects").append(`
-            <div data-project="${i}" style="top: ${i*height+(height/projects.length)}%" class="bg-accent rounded-full project-dot ${i == 0 ? 'active' : ''}"></div>
+            <div data-project="${i}" style="top: ${i*height+(height*((i/projects.length)))}%" class="bg-accent rounded-full project-dot ${i == 0 ? 'active' : ''}"></div>
         `)
     })
 
@@ -301,6 +428,14 @@
     })
 
     function project(id) {
+        let projectId = Number($(".project-dot.active").attr("data-project"));
+
+        let pos = "", neg = "-";
+        if (id < projectId) {
+            pos = "-";
+            neg = "";
+        }
+
         $("[data-project]").removeClass("active");
         $(`[data-project=${id}]`).addClass("active");
         let data = projects[id];
@@ -308,11 +443,12 @@
         data.links.forEach((link) => {
             links += `<a class="bg-body px-4 mr-3 py-1 text-white text-center rounded-full text-sm hover:bg-red-500 transition duration-300 noAStyle" href="${link.href}" target="_blank">${link.name}</a>`
         })
-        $(".project-inner").css("transform", "translateY(-100px)")
+
+        $(".project-inner").css("transform", `translateY(${neg}100px)`)
         $(".project-inner").css("opacity", "0")
         setTimeout(() => {
             $(".project-inner").css("transition", "0s")
-            $(".project-inner").css("transform", "translateY(100px)")
+            $(".project-inner").css("transform", `translateY(${pos}100px)`)
         }, 300)
         setTimeout(() => {
             $(".project-inner").css("transition", ".3s")
@@ -335,4 +471,36 @@
     }
 
     project(0)
+
+    $.ajax({ 
+        url: "https://api.github.com/users/Chezzer-ub/repos?sort=updated&type=owner",
+        headers: {
+            "Authorization": "token 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"
+        },
+        success: (repos) => {
+            repos.forEach((repo) => {
+                if (!repo.fork) {
+                    let desc = repo.description;
+                    let charCount = 55;
+                    if (desc.length > charCount) desc = desc.substring(0, charCount) + "...";
+                    $("#repos").append(`
+                        <div class="my-5 px-5 w-1/2 xl:w-1/3">
+                            <a href="${repo.html_url}" target="_blank" class="noAStyle">
+                                <div class="bg-alt rounded p-5 relative" style="min-height: 10rem;">
+                                    <h3 class="text-lg">${repo.name}</h3>
+                                    <p class="mt-2 mb-10">${desc}</p>
+                                    <div class="absolute bottom-0 left-0 m-5">
+                                        <i class="fa-solid fa-circle" style="color:${getLanguageColor(repo.language).color}"></i> ${repo.language}
+                                    </div>
+                                    <div class="absolute bottom-0 right-0 m-5">
+                                        ${repo.stargazers_count} <i class="fa-solid fa-star" style="color:#ffd43b"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    `)
+                }
+            })
+        }
+    })
 </script>
