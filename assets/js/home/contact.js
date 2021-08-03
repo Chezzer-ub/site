@@ -1,4 +1,4 @@
-$("#contact-form").on("submit", () => {
+$("#contact-form").submit(() => {
     $.post("https://chezzer.dev/api/form.php", {
         name: $("[name=name]").val(),
         contact: $("[name=contact]").val(),
