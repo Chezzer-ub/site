@@ -6,7 +6,7 @@ $("#contact-form").submit(() => {
         message: $("[name=message]").val()
     }, (res) => {
         if (res.success) {
-            $("#res").val("Sent, thank you for your message.")
+            $("#res").html("Sent, thank you for your message.")
         } else {
             $("#res").html(res.error);
         }
