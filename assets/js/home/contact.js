@@ -1,4 +1,4 @@
-$("#contact-form").submit(() => {
+function contactForm() {
     $.post("https://chezzer.dev/api/form.php", {
         name: $("[name=name]").val(),
         contact: $("[name=contact]").val(),
@@ -11,4 +11,4 @@ $("#contact-form").submit(() => {
             $("#res").html(res.error);
         }
     })
-})
+}
