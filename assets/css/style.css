@@ -7,6 +7,10 @@
     --accent: #f16b64;
 }
 
+::selection {
+    background: var(--accent);
+}
+
 .light-theme * {
     --background: #D1D5DB !important;
     --background-alt: #b4bac3 !important;
