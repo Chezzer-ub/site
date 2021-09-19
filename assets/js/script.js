@@ -1,19 +1,3 @@
-page('/', () => {
-    getContent("home.html");
-})
-
-page('*', () => {
-    getContent("home.html");
-})
-
-page();
-
-function getContent(path) {
-    $.get(`/pages/${path}`, (html) => {
-        $("main").html(html);
-    })
-}
-
 function toggleTheme() {
     if ($("html").hasClass("light-theme")) {
         $("#theme").html(`
