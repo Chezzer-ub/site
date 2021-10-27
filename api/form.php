@@ -1,7 +1,7 @@
 <?php
 $res = new stdClass;
 if ($_POST['name'] && $_POST['contact'] && $_POST['subject'] && $_POST['message']) {
-    mail("ryanhamiltoncherry@gmail.com", $_POST['subject'], $_POST['message'], "From: {$_POST['contact']}");
+    //mail("ryanhamiltoncherry@gmail.com", $_POST['subject'], $_POST['message'], "From: {$_POST['contact']}");
     $url = "https://discord.com/api/webhooks/889067323963637781/FdAy22YZ-f8o82Pf4sn4QQPqNKbD4IhYVkNFibHq2bG_vh2sJWvWiaC7ua-ojjlqzHpr";
 
     $hookObject = json_encode([
