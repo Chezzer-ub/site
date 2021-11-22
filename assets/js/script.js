@@ -19,7 +19,7 @@ function toggleTheme() {
 $("#theme").on("click", toggleTheme);
 
 $(() => {
-    $.getJSON("https://api.github.com/repos/Chezzer-ub/site/commits?per_page=1", (commit) => {
+    $.getJSON("https://api.github.com/repos/chezzzer/site/commits?per_page=1", (commit) => {
         commit = commit[0];
         $("#commit").html(commit.sha.substr(0, 7));
         $("#commit-link").attr("href", commit.html_url);
