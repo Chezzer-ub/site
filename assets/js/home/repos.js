@@ -1,7 +1,7 @@
 $.ajax({ 
-    url: "https://api.github.com/users/Chezzer-ub/repos?sort=updated&type=owner",
+    url: "https://api.github.com/users/chezzzer/repos?sort=updated&type=sources&per_page=6",
     success: (repos) => {
-        repos.forEach((repo) => {
+        repos.forEach((repo, i) => {
             if (!repo.fork) {
                 let desc = repo.description;
                 let charCount = 55;
