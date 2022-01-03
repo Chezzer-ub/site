@@ -141,6 +141,50 @@ var projects = [
         time: "11/6/2020 - Present"
     },
     {
+        name: "Cambridge Camera",
+        tags: "Live Camera, OBS, Outdoor Mayhem",
+        description: `
+            This project was an idea I had back in October; Put a camera on the roof. Simple Right?
+            <br><br>
+            The first design I came up for this is to use my Logitech C920 webcam, a Raspberry Pi Tripod, a Solar Power Bank and a Raspberry Pi Zero. 
+            I found a box and housed all the electronics in and thread the cable through a gap in the box. I tested this for many weeks but the power bank 
+            kept running out of charge, this wouldn't work so I ordered a second one. Thinking this is just going to be a money hole I put it up on the roof for 2 
+            days.
+            <br>
+            1 night I come home and it starts to rain, oh no. I try to get home as fast as possible put I am too late, the raspberry pi is literally swimming in water. 
+            I start it up and it doesn't start streaming (I didn't have a screen at this point), so I try to login to SSH to no avail. I decide to buy a mini HDMI to HDMI 
+            to finally see whats going on and to no surprise at all, I completely fried the WiFi driver. Well, back to the drawing board.
+            <br><br>
+            My second attempt was to just do away with remote all together and run a 6 meter USB extension cord up the side of my house. After some careful 
+            negociating with my parents, I manage to get permission to get up on a ladder and run it out a window, along the gutter and up the house, making sure 
+            this time that the connections are taped over and the camera has a bag on top to at least try and prevent rain. I also used a couple of adhesive zip tie 
+            holders to connect the tripod and cable to the roof. It's currently 2 days after installing this and I really hope it will be fine in the rain and wind, but 
+            we will see.
+            <br><br>
+            You can view the live camera stream down below and enjoy the ambient noise from the camera and a lofi-hiphop playlist I put together, aswell as see the current 
+            weather, when the sun is going to rise and set and the current time. 
+        `,
+        links: [
+            {
+                name: "Twitch Stream",
+                href: "https://www.twitch.tv/cambridgecam"
+            },
+            {
+                name: "Instagram",
+                href: "https://instagram.com/cambridgecameranz"
+            },
+            {
+                name: "YouTube",
+                href: "https://www.youtube.com/channel/UCz-mX5VLjAMqF8IY5lQfAHw"
+            },
+            {
+                name: "Camera Photo",
+                href: "https://cdn.discordapp.com/attachments/924772262878539838/927074322730876938/17E5FFAD-B98C-4F1B-A7FE-614839D22780.jpg"
+            }
+        ],
+        time: "15/9/2021 - Present"
+    },
+    {
         name: "Bunker",
         tags: "Web, Backend Systems, Radio, Spotify Intergration",
         description: `
