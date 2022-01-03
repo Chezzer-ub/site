@@ -142,14 +142,32 @@ var projects = [
     },
     {
         name: "Bunker",
-        tags: "Web, Backend Systems, Radio",
+        tags: "Web, Backend Systems, Radio, Spotify Intergration",
         description: `
-            Facilis ex eum voluptatum in voluptatum. Aut in aliquam ut fuga voluptatem. Minus quae et et consequatur enim illo magnam qui. Aut aut neque consequatur omnis voluptas omnis. Harum fugit nisi qui fuga maxime et et ut.
+            Bunker is a dance/electronic music radio station and has been my project ever since I left UpBeat. This radio is meant to be 
+            a change in the community, from the old slave labour that most of the radios in the community offer. A no-care, no-restriction 
+            radio based on actual DJing and mixing.
+            <br><br>
+            So far we have built a pretty cool website built with Discord & Spotify intergration for accounts. You can like songs to your 
+            Spotify library or login with Spotify or Discord.
+            <br><br>
+            Just after the release of our website, we started work on our radio & track API. This API can do wonders, migrating the Spotify, 
+            Deezer and Musixmatch APIs together into 1 free API. You can search for tracks, use ISRC or even Spotify IDs, all at superfast 
+            times as it's stored on the CloudFlare Edge caching network. This has been mine and Polar's baby for the last couple of months, 
+            constantly tinkering to make it better and offer more data (which it already offers everything you could imagine). Check it out at 
+            the link below.
+            <br><br>
+            But yes, a truely massive passion project that is going up strong, if you have mixing skills or DJing skills, you can even apply 
+            to be one. Check it out.
         `,
         links: [
             {
                 name: "Website",
                 href: "https://bunker.dance"
+            },
+            {
+                name: "API",
+                href: "https://github.com/bunkerradio/api/wiki/Methods-(v1)#apitreblelookup"
             }
         ],
         time: "6/7/2021 - Present"
@@ -158,7 +176,7 @@ var projects = [
         name: "Cloud Core",
         tags: "Minecraft Development, NodeJS, Linux",
         description: `
-            Facilis ex eum voluptatum in voluptatum. Aut in aliquam ut fuga voluptatem. Minus quae et et consequatur enim illo magnam qui. Aut aut neque consequatur omnis voluptas omnis. Harum fugit nisi qui fuga maxime et et ut.
+            This project is now deprecated, you can still find it on NPM and GitHub.
         `,
         links: [
             {
@@ -170,13 +188,25 @@ var projects = [
                 href: "https://github.com/Chezzer-ub/cloud-core"
             }
         ],
-        time: "15/5/2021 - Present"
+        time: "15/5/2021 - 25/8/2021"
     },
     {
         name: "Coasters and Crafters",
         tags: "Minecraft Development, PHP, OBS",
         description: `
-            Facilis ex eum voluptatum in voluptatum. Aut in aliquam ut fuga voluptatem. Minus quae et et consequatur enim illo magnam qui. Aut aut neque consequatur omnis voluptas omnis. Harum fugit nisi qui fuga maxime et et ut.
+            Coasters and Crafters is a community that specializes in Minecraft advertising. I am owner alongside Euan. This mostly consists of 
+            making new tools and features to help servers by making their lives easier or giving them some recognition. The project originally started 
+            as a small Minecraft theme park community, but has since turned into a platform for server owners of Minecraft, Discord and many other servers 
+            to sign on and be able to be part of a larger community.
+            <br><br>
+            My main job is making the website, things like account creation and account editing is my thing (aswell as that god awful Minecraft verify thing). The website is 
+            built in mainly PHP, but some things are exhausted with node, like the server & user page randomization is ran every 5 minutes to reduce lag on clients.
+            <br><br>
+            Every year at Coasters and Crafters, we host our annual Coaster Con event. This massive event is a weekend long event bringing all the servers into 1 big world. 
+            At Coaster Con 2021, I mainly helped with livestreaming and general management. This includes setting up a global network so livestreamers (cameramen) can provide 
+            unique views to the livestream, and I can choose which one is best (a bit like real life). The only problem with this is that a lot of the inferstructure couldn't 
+            handle the trip from overseas to New Zealand, which gave laggy and buffered streams. All in all it was good enough, but next year I am planning hopefully something 
+            a hell of a lot better. I can't reveal much ;). 
         `,
         links: [
             {
@@ -187,19 +217,19 @@ var projects = [
         time: "3/8/2020 - Present"
     },
     {
-        name: "Sapphire Adventures",
-        tags: "Minecraft Development, PHP, JavaScript",
-        description: `
-            Facilis ex eum voluptatum in voluptatum. Aut in aliquam ut fuga voluptatem. Minus quae et et consequatur enim illo magnam qui. Aut aut neque consequatur omnis voluptas omnis. Harum fugit nisi qui fuga maxime et et ut.
-        `,
-        links: [],
-        time: "3/8/2020 - 17/3/2021"
-    },
-    {
         name: "UpBeatRadio",
         tags: "Radio Development, PHP, JavaScript",
         description: `
-            Facilis ex eum voluptatum in voluptatum. Aut in aliquam ut fuga voluptatem. Minus quae et et consequatur enim illo magnam qui. Aut aut neque consequatur omnis voluptas omnis. Harum fugit nisi qui fuga maxime et et ut.
+            UpBeat is quite an old project for me and will always stay dear in my heart, I stayed there for quite a while and was one of 
+            my first large scale web projects. Of course I had no idea what I was doing, but soon picked up all the nits and kinks of the 
+            UpBeat website. 
+            <br><br>
+            We went through many phases, things like the team rethinking an entire idea and slow months where we would all be burnt out. 
+            It was one of the best experiences to start my carrer off and I thank the entire crew at UpBeat for what they do and what they 
+            have been through.
+            <br><br>
+            I left late 2019 looking to start some of my own projects as UpBeat started to die down a little, I am still a guest radio 
+            presenter and go live sometimes, but not too often.
         `,
         links: [
             {
