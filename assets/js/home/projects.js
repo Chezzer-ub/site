@@ -288,7 +288,7 @@ var projects = [
 var height = 100 / projects.length;
 projects.forEach((item, i) => {
     $(".projects").append(`
-        <div data-project="${i}" style="top: ${i*height+(height*((i/projects.length)))}%;" class="relative bg-accent rounded-full project-dot ${i == 0 ? 'active' : ''}">
+        <div data-project="${i}" style="top: ${i*height+(height*(i/projects.length))}%;" class="relative bg-accent rounded-full project-dot">
             <div class="absolute shadow left-0 bg-body ml-10 whitespace-nowrap -mt-1 px-2 py-1 rounded project-name">${item.name}</div>
         </div>
     `)
@@ -340,5 +340,3 @@ function project(id) {
         
     }, 350)
 }
-
-project(0)
