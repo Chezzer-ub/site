@@ -1,6 +1,5 @@
 .project-dot {
     position: absolute;
-    width: 20px;
     height: 20px;
     transition: .3s all;
     margin: auto;
@@ -12,7 +11,7 @@
 }
 
 .project-dot::after {
-    border-radius: 50%;
+    border-radius: 25px;
     border: 2px solid var(--text);
     content: '';
     position: absolute;
@@ -25,10 +24,15 @@
 }
 
 .project-dot:hover {
+    transform: translateY(-1.75px);
     transition: .3s all;
-    transform: translate(-1px, -1px);
-    width: 22.5px;
-    height: 22.5px;
+    height: 25px;
+}
+
+.project-dot.active:hover {
+    transition: .3s all;
+    transform: translate(-2.5px, -2px);
+    height: 25px;
 }
 
 .project-dot.active {
@@ -38,32 +42,45 @@
     height: 25px;
 }
 
-.project-dot:hover .project-name {
-    opacity: 1;
+.project-dot .project-name {
+    font-size: 14px;
+    padding: .025rem .5rem;
+    pointer-events: none;
+    opacity: 0;
+    overflow: hidden;
+    transition: .3s all;
 }
 
-.project-dot .project-name {
-    opacity: 0;
-    transition: .3s;
+.project-dot:hover .project-name {
+    opacity: 1;
 }
 
 .project-dot.active::after {
     opacity: 1;
 }
 
+.project-dot.active:hover .project-name {
+    opacity: 1;
+    padding: 0rem .5rem;
+}
+
+.project-dot.active .project-name {
+    opacity: 0;
+    padding: 0rem .25rem;
+}
+
 .projects {
     position: relative;
+    white-space: nowrap;
 }
 
 .projects::after {
-    top: 2vh;
     content: '';
     background: var(--accent);
     width: 5px;
-    height: calc(100% - 2.5vh);
+    height: 100%;
     position: absolute;
     left: 50%;
-    margin-top: -10px;
     margin-left: -2.5px;
     border-radius: 25px;
     pointer-events: none;

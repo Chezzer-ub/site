@@ -282,17 +282,30 @@ var projects = [
             }
         ],
         time: "1/7/2018 - 28/7/2019"
-    },
+    }
 ]
 
-var height = 100 / projects.length;
+var height = ($(".projects").height() / projects.length);
 projects.forEach((item, i) => {
+    //i*height+(height*(i/projects.length))
     $(".projects").append(`
-        <div data-project="${i}" style="top: ${i*height+(height*(i/projects.length))}%;" class="relative bg-accent rounded-full project-dot">
-            <div class="absolute shadow left-0 bg-body ml-10 whitespace-nowrap -mt-1 px-2 py-1 rounded project-name">${item.name}</div>
+        <div data-project="${i}" style="top: ${(i*height)+(i/projects.length*height)}px;" class="relative bg-accent rounded-full project-dot">
+            <div class="project-name">${item.name}</div>
         </div>
     `)
+    $(".projects").append(`
+        <style>
+            [data-project="${i}"]:hover {
+                width: calc(${$(`[data-project=${i}] .project-name`).width()}px + 1rem);
+            }
+
+            [data-project="${i}"] {
+                width: 20px;
+            }
+        </style>
+    `)
 })
+
 
 $("[data-project]").on("click", (e) => {
     project(Number($(e.currentTarget).attr("data-project")))
@@ -312,7 +325,7 @@ function project(id) {
     let data = projects[id];
     let links = "";
     data.links.forEach((link) => {
-        links += `<a class="bg-body px-4 mr-3 py-1 text-white text-center rounded-full text-sm hover:bg-red-500 transition duration-300 noAStyle" href="${link.href}" target="_blank">${link.name}</a>`
+        links += `<a class="bg-body px-4 mr-3 py-1 md:mt-0 mt-3 text-white text-center rounded-full text-sm hover:bg-red-500 transition duration-300 noAStyle" href="${link.href}" target="_blank">${link.name}</a>`
     })
 
     $(".project-inner").css("transform", `translateY(${neg}100px)`)
@@ -333,7 +346,7 @@ function project(id) {
             <div class="mb-5 w-6/12 project-content">
                 ${data.description}
             </div>
-            <div class="inline-flex">
+            <div class="md:inline-flex grid">
                 ${links}
             </div>
         `)
