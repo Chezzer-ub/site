@@ -185,6 +185,32 @@ var projects = [
         time: "15/9/2021 - Present"
     },
     {
+        name: "Coasters and Crafters",
+        tags: "Minecraft Development, PHP, OBS",
+        description: `
+            Coasters and Crafters is a community that specializes in Minecraft advertising. I am owner alongside Euan. This mostly consists of 
+            making new tools and features to help servers by making their lives easier or giving them some recognition. The project originally started 
+            as a small Minecraft theme park community, but has since turned into a platform for server owners of Minecraft, Discord and many other servers 
+            to sign on and be able to be part of a larger community.
+            <br><br>
+            My main job is making the website, things like account creation and account editing is my thing (aswell as that god awful Minecraft verify thing). The website is 
+            built in mainly PHP, but some things are exhausted with node, like the server & user page randomization is ran every 5 minutes to reduce lag on clients.
+            <br><br>
+            Every year at Coasters and Crafters, we host our annual Coaster Con event. This massive event is a weekend long event bringing all the servers into 1 big world. 
+            At Coaster Con 2021, I mainly helped with livestreaming and general management. This includes setting up a global network so livestreamers (cameramen) can provide 
+            unique views to the livestream, and I can choose which one is best (a bit like real life). The only problem with this is that a lot of the inferstructure couldn't 
+            handle the trip from overseas to New Zealand, which gave laggy and buffered streams. All in all it was good enough, but next year I am planning hopefully something 
+            a hell of a lot better. I can't reveal much ;). 
+        `,
+        links: [
+            {
+                name: "Website",
+                href: "https://candc.icu"
+            }
+        ],
+        time: "3/8/2020 - Present"
+    },
+    {
         name: "Bunker",
         tags: "Web, Backend Systems, Radio, Spotify Intergration",
         description: `
@@ -233,32 +259,6 @@ var projects = [
             }
         ],
         time: "15/5/2021 - 25/8/2021"
-    },
-    {
-        name: "Coasters and Crafters",
-        tags: "Minecraft Development, PHP, OBS",
-        description: `
-            Coasters and Crafters is a community that specializes in Minecraft advertising. I am owner alongside Euan. This mostly consists of 
-            making new tools and features to help servers by making their lives easier or giving them some recognition. The project originally started 
-            as a small Minecraft theme park community, but has since turned into a platform for server owners of Minecraft, Discord and many other servers 
-            to sign on and be able to be part of a larger community.
-            <br><br>
-            My main job is making the website, things like account creation and account editing is my thing (aswell as that god awful Minecraft verify thing). The website is 
-            built in mainly PHP, but some things are exhausted with node, like the server & user page randomization is ran every 5 minutes to reduce lag on clients.
-            <br><br>
-            Every year at Coasters and Crafters, we host our annual Coaster Con event. This massive event is a weekend long event bringing all the servers into 1 big world. 
-            At Coaster Con 2021, I mainly helped with livestreaming and general management. This includes setting up a global network so livestreamers (cameramen) can provide 
-            unique views to the livestream, and I can choose which one is best (a bit like real life). The only problem with this is that a lot of the inferstructure couldn't 
-            handle the trip from overseas to New Zealand, which gave laggy and buffered streams. All in all it was good enough, but next year I am planning hopefully something 
-            a hell of a lot better. I can't reveal much ;). 
-        `,
-        links: [
-            {
-                name: "Website",
-                href: "https://candc.icu"
-            }
-        ],
-        time: "3/8/2020 - Present"
     },
     {
         name: "UpBeatRadio",

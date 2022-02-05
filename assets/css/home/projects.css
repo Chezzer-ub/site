@@ -92,7 +92,7 @@
 }
 
 .project-content {
-    max-height: 60vh;
+    max-height: 50vh;
     padding-right: 2rem;
     overflow-y: auto;
 }
