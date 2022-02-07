@@ -285,11 +285,11 @@ var projects = [
     }
 ]
 
-var height = ($(".projects").height() / projects.length);
+var height = 100 / projects.length;
 projects.forEach((item, i) => {
     //i*height+(height*(i/projects.length))
     $(".projects").append(`
-        <div data-project="${i}" style="top: ${(i*height)+(i/projects.length*height)}px;" class="relative bg-accent rounded-full project-dot">
+        <div data-project="${i}" style="top: ${(i*height)+(i/projects.length*height)}%;" class="relative bg-accent rounded-full project-dot">
             <div class="project-name">${item.name}</div>
         </div>
     `)

@@ -1,7 +1,8 @@
 * {
-    --background: #262322;
-    --background-alt: #211d1c;
-    --background-dark: #1d1918;
+    /* --background: #262322; */
+    --background-alt: #231815;
+    --background-dark: #1e1412;
+    --background: #271c19;
     --text: #D1D5DB;
     --text-dark: #646D78;
     --accent: #f16b64;
