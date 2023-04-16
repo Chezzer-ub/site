@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    height: 65vh;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.name {
+    font-size: 20vw;
+    font-weight: 700;
+    font-variation-settings: "LIFT" 50, "THRU" 55;
+    font-family: var(--jetlab);
+    line-height: 13vw;
+    margin: 0;
+    text-align: center;
+}
+
+.job {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    letter-spacing: 1.5rem;
+}
+
+.job:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+.work {
+    max-width: 700px;
+    margin: 10rem auto;
+    padding: 0 1rem;
+}
+
+.work .item {
+    border-top: 2px var(--light) solid;
+    padding-bottom: 2rem;
+}
+
+.contact {
+    max-width: 700px;
+    padding: 0 1rem;
+    margin: 10rem auto;
+}
