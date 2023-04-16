@@ -22,7 +22,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className={styles.work}>
-                    <h1>What I'm Known For</h1>
+                    <h1>What I&apos;m Known For</h1>
                     <div className={styles.item}>
                         <h2>Bundle Group</h2>
                         <div>
