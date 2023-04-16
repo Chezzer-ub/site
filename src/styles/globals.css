@@ -1,0 +1,22 @@
+* {
+    --jetlab: "jetlab-variable", sans-serif;
+
+    --dark: #13130f;
+    --light: #cab67e;
+}
+
+body {
+    background: var(--dark);
+    color: var(--light);
+    margin: 0;
+    font-family: "bakemono-variable", sans-serif;
+    font-variation-settings: "MONO" 0, "wght" 400;
+}
+
+.jetlab {
+    font-variation-settings: "LIFT" 50, "THRU" 55;
+}
+
+a {
+    color: inherit;
+}
